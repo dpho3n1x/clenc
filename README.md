@@ -6,6 +6,7 @@ Clenc jest prostą w obsłudze aplikacją służącą do łatwego i szybkiego **
 ## Wymagania aplikacji:
 Aby aplikacja działała wymagane są biblioteki (w tym samym katalogu co aplikacja):
 - FFMPEG (https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-essentials.7z)
+- Biblioteka Windows .NET 4.5.2
 
 Zalecane dodatkowe biblioteki:
 - Dowolna paczka kodeków do Windows Media Player
