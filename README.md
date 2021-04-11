@@ -46,8 +46,10 @@ Kodek dźwięku: **Opus**
 Wymagana aplikacja Microsoft Visual Studio 2019 wraz z odwołaniem axWindowsMediaPlayer.
 
 ## Rozwiązywanie problemów:
-Q: Aplikacja nie chce wczytać mojego filmu i się zawiesza
+Q: Aplikacja nie chce wczytać mojego filmu i się zawiesza.
+
 A: Zainstaluj dowolną paczkę kodeków do Windows Media Player. Alternatywnie: Przed zaznaczeniem nagrania kliknij PPM na przycisk "Wybierz nagranie" w oknie aplikacji i zaznacz podaną opcję.
 
 Q: Występuje błąd z enkodowaniem.
+
 A: Sprawdź czy wszystkie ustawienia są poprawne i czy nagranie jest dostępne na dysku. Jeżeli zmieniłeś coś w ścieżkach dźwiękowych, spróbuj ponownie zmienić. Jeżeli to nie pomoże: kliknij PPM na ikonki w zakładce Podsumowanie obok przycisku "Renderuj Nagranie". Tam znajduje się zestaw opcji który pomoże ci znaleźć błąd.
