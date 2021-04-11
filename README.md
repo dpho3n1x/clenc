@@ -4,8 +4,8 @@ App available only in Polish language.
 Clenc jest prostą w obsłudze aplikacją służącą do łatwego i szybkiego **przycinania nagrań**. Pośród innych aplikacji wyróżnia się efektywnością. Pozwala na uzyskanie **bardzo dobrego stosunku jakości do wielkości pliku**. Zawdzięcza to nowoczesnym kodekom obrazu i dźwięku. 
 
 ## Wymagania aplikacji:
-Aby aplikacja działała wymagane są biblioteki (w tym samym katalogu co aplikacja):
-- FFMPEG (https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-essentials.7z)
+Aby aplikacja działała wymagane są biblioteki:
+- FFMPEG (https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-essentials.7z - umieść plik ffmpeg.exe w folderze aplikacji)
 - Biblioteka Windows .NET 4.5.2
 
 Zalecane dodatkowe biblioteki:
