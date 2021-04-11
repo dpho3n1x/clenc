@@ -21,8 +21,10 @@ Sprzęt:
 ## Jak korzystać z aplikacji:
 1. Wybierz nagranie do przycięcia
 ![obraz](https://user-images.githubusercontent.com/57898662/114313235-01eeed80-9af6-11eb-990b-b9c7e7fb6763.png)
+
 2. Wybierz czas początku i końca nagrania
 ![obraz](https://user-images.githubusercontent.com/57898662/114313284-437f9880-9af6-11eb-8e38-6ffdf1c77e37.png)
+
 3. Wyznacz oczekiwaną wielkość nagrania (domyślnie 8MB pod Discorda). Następnie kliknij przycisk "Renderuj Nagranie"
 ![obraz](https://user-images.githubusercontent.com/57898662/114313358-7c1f7200-9af6-11eb-8a94-9b2d68c1b9ef.png)
 
@@ -47,9 +49,7 @@ Wymagana aplikacja Microsoft Visual Studio 2019 wraz z odwołaniem axWindowsMedi
 
 ## Rozwiązywanie problemów:
 Q: Aplikacja nie chce wczytać mojego filmu i się zawiesza.
-
 A: Zainstaluj dowolną paczkę kodeków do Windows Media Player. Alternatywnie: Przed zaznaczeniem nagrania kliknij PPM na przycisk "Wybierz nagranie" w oknie aplikacji i zaznacz podaną opcję.
 
 Q: Występuje błąd z enkodowaniem.
-
 A: Sprawdź czy wszystkie ustawienia są poprawne i czy nagranie jest dostępne na dysku. Jeżeli zmieniłeś coś w ścieżkach dźwiękowych, spróbuj ponownie zmienić. Jeżeli to nie pomoże: kliknij PPM na ikonki w zakładce Podsumowanie obok przycisku "Renderuj Nagranie". Tam znajduje się zestaw opcji który pomoże ci znaleźć błąd.
