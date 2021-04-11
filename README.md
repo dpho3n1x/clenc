@@ -3,6 +3,28 @@ App available only in Polish language.
 
 Clenc jest prostą w obsłudze aplikacją służącą do łatwego i szybkiego **przycinania nagrań**. Pośród innych aplikacji wyróżnia się efektywnością. Pozwala na uzyskanie **bardzo dobrego stosunku jakości do wielkości pliku**. Zawdzięcza to nowoczesnym kodekom obrazu i dźwięku. 
 
+## Wymagania aplikacji:
+Aby aplikacja działała wymagane są biblioteki (w tym samym katalogu co aplikacja):
+- FFMPEG (https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-essentials.7z)
+
+Zalecane dodatkowe biblioteki:
+- Dowolna paczka kodeków do Windows Media Player
+- Odtwarzacz MPV (https://mpv.io/installation/)
+
+Sprzęt:
+- Nowoczesny procesor (znacznie przyspiesza konwersję)
+- Conajmniej 512MB wolnej pamięci RAM
+- 80MB wolnego miejsca na dysku
+- System operacyjny Windows Vista lub nowszy (64-bit)
+
+## Jak korzystać z aplikacji:
+1. Wybierz nagranie do przycięcia
+![obraz](https://user-images.githubusercontent.com/57898662/114313235-01eeed80-9af6-11eb-990b-b9c7e7fb6763.png)
+2. Wybierz czas początku i końca nagrania
+![obraz](https://user-images.githubusercontent.com/57898662/114313284-437f9880-9af6-11eb-8e38-6ffdf1c77e37.png)
+3. Wyznacz oczekiwaną wielkość nagrania (domyślnie 8MB pod Discorda). Następnie kliknij przycisk "Renderuj Nagranie"
+![obraz](https://user-images.githubusercontent.com/57898662/114313358-7c1f7200-9af6-11eb-8a94-9b2d68c1b9ef.png)
+
 ## Kodeki używane przez aplikację:
 Kodek obrazu: **VP9**
 - Jest to nowoczesny kodek obrazu pozwalający na uzyskanie większej efektywności od klasycznego h264.
@@ -18,27 +40,6 @@ Kodek dźwięku: **Opus**
 - Można go włączyć w zakładce "Zaawansowane"
 - Przyszłościowy kodek wideo oferujący najwyższą możliwą efektywność jakości
 - Jest używany m.in. na serwisie YouTube
-
-## Wymagania aplikacji:
-Aby aplikacja działała wymagane są biblioteki (w tym samym katalogu co aplikacja):
-- FFMPEG (https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-essentials.7z)
-
-Zalecane dodatkowe biblioteki:
-- Dowolna paczka kodeków do Windows Media Player
-- Odtwarzacz MPV (https://mpv.io/installation/)
-
-Sprzęt:
-- Nowoczesny procesor (znacznie przyspiesza konwersję)
-- Conajmniej 512MB wolnej pamięci RAM
-- 80MB wolnego miejsca na dysku
-
-## Jak korzystać z aplikacji:
-1. Wybierz nagranie do przycięcia
-![obraz](https://user-images.githubusercontent.com/57898662/114313235-01eeed80-9af6-11eb-990b-b9c7e7fb6763.png)
-2. Wybierz czas początku i końca nagrania
-![obraz](https://user-images.githubusercontent.com/57898662/114313284-437f9880-9af6-11eb-8e38-6ffdf1c77e37.png)
-3. Wyznacz oczekiwaną wielkość nagrania (domyślnie 8MB pod Discorda). Następnie kliknij przycisk "Renderuj Nagranie"
-![obraz](https://user-images.githubusercontent.com/57898662/114313358-7c1f7200-9af6-11eb-8a94-9b2d68c1b9ef.png)
 
 ## Kompilacja:
 Wymagana aplikacja Microsoft Visual Studio 2019 wraz z odwołaniem axWindowsMediaPlayer.
