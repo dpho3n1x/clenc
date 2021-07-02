@@ -55,4 +55,4 @@ Q: Występuje błąd z enkodowaniem.
 A: Sprawdź czy wszystkie ustawienia są poprawne i czy nagranie jest dostępne na dysku. Jeżeli zmieniłeś coś w ścieżkach dźwiękowych, spróbuj ponownie zmienić. Jeżeli to nie pomoże: kliknij PPM na ikonki w zakładce Podsumowanie obok przycisku "Renderuj Nagranie". Tam znajduje się zestaw opcji który pomoże ci znaleźć błąd.
 
 ## Prawa Autorskie:
-Ikony w aplikacji: https://www.flaticon.com (autorstwa: xnimrodx)
+Ikony w aplikacji: https://www.flaticon.com
