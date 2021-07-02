@@ -8,7 +8,7 @@ Aby aplikacja działała wymagane są biblioteki:
 - FFMPEG (https://www.gyan.dev/ffmpeg/builds/ffmpeg-git-essentials.7z - umieść plik ffmpeg.exe w folderze aplikacji)
 - Biblioteka Windows .NET 4.5.2
 
-Zalecane dodatkowe biblioteki:
+Zalecane dodatki:
 - Dowolna paczka kodeków do Windows Media Player
 - Odtwarzacz MPV (https://mpv.io/installation/)
 
