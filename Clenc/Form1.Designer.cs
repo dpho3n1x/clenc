@@ -44,6 +44,12 @@
             this.label30 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.precisiontrack = new System.Windows.Forms.TrackBar();
+            this.advancedendtime = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.advancedstarttime = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.removemeta = new System.Windows.Forms.CheckBox();
+            this.hwaccelmodel = new System.Windows.Forms.Button();
             this.optimizebits = new System.Windows.Forms.CheckBox();
             this.ARNRcheck = new System.Windows.Forms.CheckBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -54,6 +60,10 @@
             this.av1check = new System.Windows.Forms.CheckBox();
             this.fpscheck = new System.Windows.Forms.CheckBox();
             this.panelfps = new System.Windows.Forms.Panel();
+            this.fpsPAL = new System.Windows.Forms.RadioButton();
+            this.fps48 = new System.Windows.Forms.RadioButton();
+            this.fps50 = new System.Windows.Forms.RadioButton();
+            this.fps60 = new System.Windows.Forms.RadioButton();
             this.fps29 = new System.Windows.Forms.RadioButton();
             this.fps30 = new System.Windows.Forms.RadioButton();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
@@ -61,6 +71,7 @@
             this.timerdatadownload = new System.Windows.Forms.Timer(this.components);
             this.enctimer1 = new System.Windows.Forms.Timer(this.components);
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.infolabel = new System.Windows.Forms.Label();
             this.fullctrl = new System.Windows.Forms.CheckBox();
             this.dropmetadata = new System.Windows.Forms.CheckBox();
             this.liniakomendmeta = new System.Windows.Forms.TextBox();
@@ -73,11 +84,12 @@
             this.labelkomendasound = new System.Windows.Forms.Label();
             this.ustzaawansowanetext1 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.panelwiecejinfo = new System.Windows.Forms.Panel();
-            this.bitratelabel = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.tytulpodsumowanie2 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.wielkosciplikubox = new System.Windows.Forms.TextBox();
+            this.maskerror2 = new System.Windows.Forms.Label();
             this.bitratelabelinf = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.dlugoscnagraniatext = new System.Windows.Forms.TextBox();
             this.featureslogo = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.wyłaczOptymalizacjęWMPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -85,11 +97,8 @@
             this.nieCzyśćFolderuTymczasowegoPoZakończeniuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.wyświetlPowiadomieniePoZakończeniuProcesuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.niePokazujOknaWierszaPoleceńToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.maskerror2 = new System.Windows.Forms.Label();
-            this.wielkosciplikuboxB = new System.Windows.Forms.TextBox();
-            this.wielkosciplikubox = new System.Windows.Forms.TextBox();
+            this.zdalnyRenderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.startenc = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.spdmaxtext = new System.Windows.Forms.Label();
@@ -97,18 +106,14 @@
             this.label5 = new System.Windows.Forms.Label();
             this.encspdtrack = new System.Windows.Forms.TrackBar();
             this.label2 = new System.Windows.Forms.Label();
-            this.tytulpodsumowanie2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.AudioOnlyCheck = new System.Windows.Forms.CheckBox();
-            this.surroundsoundcheck = new System.Windows.Forms.CheckBox();
             this.sounddisabled = new System.Windows.Forms.RadioButton();
             this.radiosound1 = new System.Windows.Forms.RadioButton();
             this.podsumowanieinstrSound = new System.Windows.Forms.Label();
             this.radiosoundJ = new System.Windows.Forms.RadioButton();
             this.radiosound2 = new System.Windows.Forms.RadioButton();
             this.radiosoundB = new System.Windows.Forms.RadioButton();
-            this.tytulpodsumowanie = new System.Windows.Forms.Label();
-            this.instrukcjapodsumowanie2 = new System.Windows.Forms.Label();
             this.instrukcjapodsumowanie = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label18 = new System.Windows.Forms.Label();
@@ -116,11 +121,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.wmp1 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.pobinfo = new System.Windows.Forms.Label();
+            this.pobani = new System.Windows.Forms.PictureBox();
             this.koniectextmask = new System.Windows.Forms.MaskedTextBox();
             this.maskerror = new System.Windows.Forms.Label();
             this.poczatektextmask = new System.Windows.Forms.MaskedTextBox();
-            this.wmp1 = new AxWMPLib.AxWindowsMediaPlayer();
-            this.pobinfo = new System.Windows.Forms.Label();
             this.defaultplayer = new System.Windows.Forms.Button();
             this.dlugosctext = new System.Windows.Forms.Label();
             this.wyznaczkoniec = new System.Windows.Forms.Button();
@@ -145,7 +151,6 @@
             this.renderimgcontext = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.wyświetlIWstrzymajOknoWierszaPoleceńToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.autopreviewrendering = new System.Windows.Forms.ToolStripMenuItem();
-            this.hdrendercheck = new System.Windows.Forms.ToolStripMenuItem();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -154,26 +159,25 @@
             this.label21 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.dimensionsimg = new System.Windows.Forms.PictureBox();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.playencodedPoz1 = new System.Windows.Forms.Button();
+            this.renderTab = new System.Windows.Forms.TabPage();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.soundbitrateinfPoz1 = new System.Windows.Forms.Label();
+            this.soundbitrateinf = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.fserrorinf = new System.Windows.Forms.Label();
-            this.filesizekbPoz1 = new System.Windows.Forms.Label();
+            this.filesizekb = new System.Windows.Forms.Label();
             this.status = new System.Windows.Forms.Label();
-            this.procentstatusPoz1 = new System.Windows.Forms.Label();
+            this.procentstatus = new System.Windows.Forms.Label();
             this.killprocess = new System.Windows.Forms.Button();
-            this.KolejkaPoz1Text = new System.Windows.Forms.Label();
-            this.encprogressbarPoz1 = new System.Windows.Forms.ProgressBar();
+            this.Kolejka = new System.Windows.Forms.Label();
+            this.encprogressbar = new System.Windows.Forms.ProgressBar();
             this.progresscircle = new System.Windows.Forms.PictureBox();
+            this.playencoded = new System.Windows.Forms.Button();
             this.oczekiwanienadanewielkoscMB = new System.Windows.Forms.Timer(this.components);
             this.processexited1 = new System.Windows.Forms.Timer(this.components);
             this.processexited2 = new System.Windows.Forms.Timer(this.components);
             this.process2exited2 = new System.Windows.Forms.Timer(this.components);
             this.featuresenabledtooltip = new System.Windows.Forms.ToolTip(this.components);
-            this.infolabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PodwojnyPanel)).BeginInit();
             this.PodwojnyPanel.Panel1.SuspendLayout();
             this.PodwojnyPanel.Panel2.SuspendLayout();
@@ -183,7 +187,7 @@
             this.panelfps.SuspendLayout();
             this.tabPage5.SuspendLayout();
             this.tabPage4.SuspendLayout();
-            this.panelwiecejinfo.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.encspdtrack)).BeginInit();
@@ -191,13 +195,14 @@
             this.tabPage3.SuspendLayout();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.wmp1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pobani)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.wybierznagraniemenu.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage7.SuspendLayout();
             this.renderimgcontext.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dimensionsimg)).BeginInit();
-            this.tabPage8.SuspendLayout();
+            this.renderTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -232,6 +237,12 @@
             // PodwojnyPanel.Panel2
             // 
             this.PodwojnyPanel.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.PodwojnyPanel.Panel2.Controls.Add(this.advancedendtime);
+            this.PodwojnyPanel.Panel2.Controls.Add(this.label15);
+            this.PodwojnyPanel.Panel2.Controls.Add(this.advancedstarttime);
+            this.PodwojnyPanel.Panel2.Controls.Add(this.label9);
+            this.PodwojnyPanel.Panel2.Controls.Add(this.removemeta);
+            this.PodwojnyPanel.Panel2.Controls.Add(this.hwaccelmodel);
             this.PodwojnyPanel.Panel2.Controls.Add(this.optimizebits);
             this.PodwojnyPanel.Panel2.Controls.Add(this.ARNRcheck);
             this.PodwojnyPanel.Panel2.Controls.Add(this.label13);
@@ -339,13 +350,56 @@
             this.precisiontrack.Maximum = 2;
             this.precisiontrack.Name = "precisiontrack";
             this.featuresenabledtooltip.SetToolTip(this.precisiontrack, resources.GetString("precisiontrack.ToolTip"));
-            this.precisiontrack.Value = 2;
+            this.precisiontrack.Value = 1;
+            // 
+            // advancedendtime
+            // 
+            resources.ApplyResources(this.advancedendtime, "advancedendtime");
+            this.advancedendtime.Name = "advancedendtime";
+            this.featuresenabledtooltip.SetToolTip(this.advancedendtime, resources.GetString("advancedendtime.ToolTip"));
+            this.advancedendtime.TextChanged += new System.EventHandler(this.advancedendtime_TextChanged);
+            // 
+            // label15
+            // 
+            resources.ApplyResources(this.label15, "label15");
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Name = "label15";
+            // 
+            // advancedstarttime
+            // 
+            resources.ApplyResources(this.advancedstarttime, "advancedstarttime");
+            this.advancedstarttime.Name = "advancedstarttime";
+            this.featuresenabledtooltip.SetToolTip(this.advancedstarttime, resources.GetString("advancedstarttime.ToolTip"));
+            this.advancedstarttime.TextChanged += new System.EventHandler(this.advancedstarttime_TextChanged);
+            // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Name = "label9";
+            // 
+            // removemeta
+            // 
+            resources.ApplyResources(this.removemeta, "removemeta");
+            this.removemeta.Checked = true;
+            this.removemeta.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.removemeta.ForeColor = System.Drawing.Color.White;
+            this.removemeta.Name = "removemeta";
+            this.featuresenabledtooltip.SetToolTip(this.removemeta, resources.GetString("removemeta.ToolTip"));
+            this.removemeta.UseVisualStyleBackColor = true;
+            this.removemeta.CheckedChanged += new System.EventHandler(this.removemeta_CheckedChanged);
+            // 
+            // hwaccelmodel
+            // 
+            resources.ApplyResources(this.hwaccelmodel, "hwaccelmodel");
+            this.hwaccelmodel.Name = "hwaccelmodel";
+            this.featuresenabledtooltip.SetToolTip(this.hwaccelmodel, resources.GetString("hwaccelmodel.ToolTip"));
+            this.hwaccelmodel.UseVisualStyleBackColor = true;
+            this.hwaccelmodel.Click += new System.EventHandler(this.hwaccelmodel_Click);
             // 
             // optimizebits
             // 
             resources.ApplyResources(this.optimizebits, "optimizebits");
-            this.optimizebits.Checked = true;
-            this.optimizebits.CheckState = System.Windows.Forms.CheckState.Checked;
             this.optimizebits.ForeColor = System.Drawing.Color.White;
             this.optimizebits.Name = "optimizebits";
             this.featuresenabledtooltip.SetToolTip(this.optimizebits, resources.GetString("optimizebits.ToolTip"));
@@ -354,8 +408,6 @@
             // ARNRcheck
             // 
             resources.ApplyResources(this.ARNRcheck, "ARNRcheck");
-            this.ARNRcheck.Checked = true;
-            this.ARNRcheck.CheckState = System.Windows.Forms.CheckState.Checked;
             this.ARNRcheck.ForeColor = System.Drawing.Color.White;
             this.ARNRcheck.Name = "ARNRcheck";
             this.featuresenabledtooltip.SetToolTip(this.ARNRcheck, resources.GetString("ARNRcheck.ToolTip"));
@@ -382,8 +434,6 @@
             // nvidiaaccelcheck
             // 
             resources.ApplyResources(this.nvidiaaccelcheck, "nvidiaaccelcheck");
-            this.nvidiaaccelcheck.Checked = true;
-            this.nvidiaaccelcheck.CheckState = System.Windows.Forms.CheckState.Checked;
             this.nvidiaaccelcheck.ForeColor = System.Drawing.Color.White;
             this.nvidiaaccelcheck.Name = "nvidiaaccelcheck";
             this.featuresenabledtooltip.SetToolTip(this.nvidiaaccelcheck, resources.GetString("nvidiaaccelcheck.ToolTip"));
@@ -405,7 +455,13 @@
             this.usercommandchange.AutoCompleteCustomSource.AddRange(new string[] {
             resources.GetString("usercommandchange.AutoCompleteCustomSource"),
             resources.GetString("usercommandchange.AutoCompleteCustomSource1"),
-            resources.GetString("usercommandchange.AutoCompleteCustomSource2")});
+            resources.GetString("usercommandchange.AutoCompleteCustomSource2"),
+            resources.GetString("usercommandchange.AutoCompleteCustomSource3"),
+            resources.GetString("usercommandchange.AutoCompleteCustomSource4"),
+            resources.GetString("usercommandchange.AutoCompleteCustomSource5"),
+            resources.GetString("usercommandchange.AutoCompleteCustomSource6"),
+            resources.GetString("usercommandchange.AutoCompleteCustomSource7"),
+            resources.GetString("usercommandchange.AutoCompleteCustomSource8")});
             this.usercommandchange.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.usercommandchange.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.usercommandchange.BackColor = System.Drawing.Color.SaddleBrown;
@@ -433,10 +489,46 @@
             // 
             // panelfps
             // 
+            this.panelfps.Controls.Add(this.fpsPAL);
+            this.panelfps.Controls.Add(this.fps48);
+            this.panelfps.Controls.Add(this.fps50);
+            this.panelfps.Controls.Add(this.fps60);
             this.panelfps.Controls.Add(this.fps29);
             this.panelfps.Controls.Add(this.fps30);
             resources.ApplyResources(this.panelfps, "panelfps");
             this.panelfps.Name = "panelfps";
+            // 
+            // fpsPAL
+            // 
+            resources.ApplyResources(this.fpsPAL, "fpsPAL");
+            this.fpsPAL.ForeColor = System.Drawing.Color.White;
+            this.fpsPAL.Name = "fpsPAL";
+            this.fpsPAL.UseVisualStyleBackColor = true;
+            this.fpsPAL.CheckedChanged += new System.EventHandler(this.fpsPAL_CheckedChanged);
+            // 
+            // fps48
+            // 
+            resources.ApplyResources(this.fps48, "fps48");
+            this.fps48.ForeColor = System.Drawing.Color.White;
+            this.fps48.Name = "fps48";
+            this.fps48.UseVisualStyleBackColor = true;
+            this.fps48.CheckedChanged += new System.EventHandler(this.fps48_CheckedChanged);
+            // 
+            // fps50
+            // 
+            resources.ApplyResources(this.fps50, "fps50");
+            this.fps50.ForeColor = System.Drawing.Color.White;
+            this.fps50.Name = "fps50";
+            this.fps50.UseVisualStyleBackColor = true;
+            this.fps50.CheckedChanged += new System.EventHandler(this.fps50_CheckedChanged);
+            // 
+            // fps60
+            // 
+            resources.ApplyResources(this.fps60, "fps60");
+            this.fps60.ForeColor = System.Drawing.Color.White;
+            this.fps60.Name = "fps60";
+            this.fps60.UseVisualStyleBackColor = true;
+            this.fps60.CheckedChanged += new System.EventHandler(this.fps60_CheckedChanged);
             // 
             // fps29
             // 
@@ -465,6 +557,7 @@
             // 
             // timerdatadownload
             // 
+            this.timerdatadownload.Interval = 500;
             this.timerdatadownload.Tick += new System.EventHandler(this.timerdatadownload_Tick);
             // 
             // enctimer1
@@ -491,6 +584,13 @@
             this.tabPage5.Controls.Add(this.ustzaawansowanetext1);
             this.tabPage5.Name = "tabPage5";
             // 
+            // infolabel
+            // 
+            this.infolabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            resources.ApplyResources(this.infolabel, "infolabel");
+            this.infolabel.ForeColor = System.Drawing.Color.White;
+            this.infolabel.Name = "infolabel";
+            // 
             // fullctrl
             // 
             resources.ApplyResources(this.fullctrl, "fullctrl");
@@ -513,6 +613,7 @@
             resources.ApplyResources(this.liniakomendmeta, "liniakomendmeta");
             this.liniakomendmeta.Name = "liniakomendmeta";
             this.liniakomendmeta.ReadOnly = true;
+            this.featuresenabledtooltip.SetToolTip(this.liniakomendmeta, resources.GetString("liniakomendmeta.ToolTip"));
             // 
             // liniakomend2
             // 
@@ -569,56 +670,61 @@
             // tabPage4
             // 
             resources.ApplyResources(this.tabPage4, "tabPage4");
-            this.tabPage4.BackColor = System.Drawing.Color.White;
-            this.tabPage4.Controls.Add(this.panelwiecejinfo);
+            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.tabPage4.Controls.Add(this.panel2);
             this.tabPage4.Controls.Add(this.featureslogo);
-            this.tabPage4.Controls.Add(this.maskerror2);
-            this.tabPage4.Controls.Add(this.wielkosciplikuboxB);
-            this.tabPage4.Controls.Add(this.wielkosciplikubox);
             this.tabPage4.Controls.Add(this.startenc);
-            this.tabPage4.Controls.Add(this.label14);
             this.tabPage4.Controls.Add(this.panel3);
-            this.tabPage4.Controls.Add(this.tytulpodsumowanie2);
             this.tabPage4.Controls.Add(this.panel1);
-            this.tabPage4.Controls.Add(this.tytulpodsumowanie);
-            this.tabPage4.Controls.Add(this.instrukcjapodsumowanie2);
             this.tabPage4.Controls.Add(this.instrukcjapodsumowanie);
             this.tabPage4.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Enter += new System.EventHandler(this.tabPage4_Enter);
             // 
-            // panelwiecejinfo
+            // panel2
             // 
-            this.panelwiecejinfo.Controls.Add(this.bitratelabel);
-            this.panelwiecejinfo.Controls.Add(this.bitratelabelinf);
-            this.panelwiecejinfo.Controls.Add(this.label9);
-            this.panelwiecejinfo.Controls.Add(this.dlugoscnagraniatext);
-            resources.ApplyResources(this.panelwiecejinfo, "panelwiecejinfo");
-            this.panelwiecejinfo.Name = "panelwiecejinfo";
+            resources.ApplyResources(this.panel2, "panel2");
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.tytulpodsumowanie2);
+            this.panel2.Controls.Add(this.label14);
+            this.panel2.Controls.Add(this.wielkosciplikubox);
+            this.panel2.Controls.Add(this.maskerror2);
+            this.panel2.Controls.Add(this.bitratelabelinf);
+            this.panel2.Name = "panel2";
             // 
-            // bitratelabel
+            // tytulpodsumowanie2
             // 
-            resources.ApplyResources(this.bitratelabel, "bitratelabel");
-            this.bitratelabel.Name = "bitratelabel";
-            this.bitratelabel.Click += new System.EventHandler(this.bitratelabel_Click);
-            this.bitratelabel.TextChanged += new System.EventHandler(this.bitratelabel_TextChanged);
+            resources.ApplyResources(this.tytulpodsumowanie2, "tytulpodsumowanie2");
+            this.tytulpodsumowanie2.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.tytulpodsumowanie2.ForeColor = System.Drawing.Color.OrangeRed;
+            this.tytulpodsumowanie2.Name = "tytulpodsumowanie2";
+            // 
+            // label14
+            // 
+            resources.ApplyResources(this.label14, "label14");
+            this.label14.Name = "label14";
+            // 
+            // wielkosciplikubox
+            // 
+            resources.ApplyResources(this.wielkosciplikubox, "wielkosciplikubox");
+            this.wielkosciplikubox.Name = "wielkosciplikubox";
+            this.featuresenabledtooltip.SetToolTip(this.wielkosciplikubox, resources.GetString("wielkosciplikubox.ToolTip"));
+            this.wielkosciplikubox.TextChanged += new System.EventHandler(this.wielkosciplikubox_TextChanged);
+            // 
+            // maskerror2
+            // 
+            resources.ApplyResources(this.maskerror2, "maskerror2");
+            this.maskerror2.BackColor = System.Drawing.Color.DarkRed;
+            this.maskerror2.ForeColor = System.Drawing.Color.White;
+            this.maskerror2.Name = "maskerror2";
             // 
             // bitratelabelinf
             // 
             resources.ApplyResources(this.bitratelabelinf, "bitratelabelinf");
+            this.bitratelabelinf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bitratelabelinf.ForeColor = System.Drawing.Color.White;
             this.bitratelabelinf.Name = "bitratelabelinf";
-            this.bitratelabelinf.Click += new System.EventHandler(this.bitratelabel_Click);
-            // 
-            // label9
-            // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.Name = "label9";
-            // 
-            // dlugoscnagraniatext
-            // 
-            resources.ApplyResources(this.dlugoscnagraniatext, "dlugoscnagraniatext");
-            this.dlugoscnagraniatext.Name = "dlugoscnagraniatext";
-            this.dlugoscnagraniatext.ReadOnly = true;
+            this.featuresenabledtooltip.SetToolTip(this.bitratelabelinf, resources.GetString("bitratelabelinf.ToolTip"));
             // 
             // featureslogo
             // 
@@ -636,7 +742,8 @@
             this.pauzaNaKońcuEnkodowaniadebugToolStripMenuItem,
             this.nieCzyśćFolderuTymczasowegoPoZakończeniuToolStripMenuItem,
             this.wyświetlPowiadomieniePoZakończeniuProcesuToolStripMenuItem,
-            this.niePokazujOknaWierszaPoleceńToolStripMenuItem});
+            this.niePokazujOknaWierszaPoleceńToolStripMenuItem,
+            this.zdalnyRenderToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             resources.ApplyResources(this.contextMenuStrip1, "contextMenuStrip1");
             // 
@@ -672,33 +779,18 @@
             // 
             // niePokazujOknaWierszaPoleceńToolStripMenuItem
             // 
+            this.niePokazujOknaWierszaPoleceńToolStripMenuItem.Checked = true;
             this.niePokazujOknaWierszaPoleceńToolStripMenuItem.CheckOnClick = true;
-            resources.ApplyResources(this.niePokazujOknaWierszaPoleceńToolStripMenuItem, "niePokazujOknaWierszaPoleceńToolStripMenuItem");
+            this.niePokazujOknaWierszaPoleceńToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.niePokazujOknaWierszaPoleceńToolStripMenuItem.Name = "niePokazujOknaWierszaPoleceńToolStripMenuItem";
+            resources.ApplyResources(this.niePokazujOknaWierszaPoleceńToolStripMenuItem, "niePokazujOknaWierszaPoleceńToolStripMenuItem");
             this.niePokazujOknaWierszaPoleceńToolStripMenuItem.CheckedChanged += new System.EventHandler(this.niePokazujOknaWierszaPoleceńToolStripMenuItem_CheckedChanged);
             // 
-            // maskerror2
+            // zdalnyRenderToolStripMenuItem
             // 
-            resources.ApplyResources(this.maskerror2, "maskerror2");
-            this.maskerror2.BackColor = System.Drawing.Color.DarkRed;
-            this.maskerror2.ForeColor = System.Drawing.Color.White;
-            this.maskerror2.Name = "maskerror2";
-            // 
-            // wielkosciplikuboxB
-            // 
-            resources.ApplyResources(this.wielkosciplikuboxB, "wielkosciplikuboxB");
-            this.wielkosciplikuboxB.BackColor = System.Drawing.SystemColors.Window;
-            this.wielkosciplikuboxB.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.wielkosciplikuboxB.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.wielkosciplikuboxB.Name = "wielkosciplikuboxB";
-            this.wielkosciplikuboxB.ReadOnly = true;
-            // 
-            // wielkosciplikubox
-            // 
-            resources.ApplyResources(this.wielkosciplikubox, "wielkosciplikubox");
-            this.wielkosciplikubox.Name = "wielkosciplikubox";
-            this.featuresenabledtooltip.SetToolTip(this.wielkosciplikubox, resources.GetString("wielkosciplikubox.ToolTip"));
-            this.wielkosciplikubox.TextChanged += new System.EventHandler(this.wielkosciplikubox_TextChanged);
+            this.zdalnyRenderToolStripMenuItem.CheckOnClick = true;
+            this.zdalnyRenderToolStripMenuItem.Name = "zdalnyRenderToolStripMenuItem";
+            resources.ApplyResources(this.zdalnyRenderToolStripMenuItem, "zdalnyRenderToolStripMenuItem");
             // 
             // startenc
             // 
@@ -710,13 +802,10 @@
             this.startenc.UseVisualStyleBackColor = false;
             this.startenc.Click += new System.EventHandler(this.button2_Click);
             // 
-            // label14
-            // 
-            resources.ApplyResources(this.label14, "label14");
-            this.label14.Name = "label14";
-            // 
             // panel3
             // 
+            resources.ApplyResources(this.panel3, "panel3");
+            this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.spdmaxtext);
             this.panel3.Controls.Add(this.label6);
@@ -724,7 +813,6 @@
             this.panel3.Controls.Add(this.encspdtrack);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Cursor = System.Windows.Forms.Cursors.Arrow;
-            resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
             // 
             // label8
@@ -763,47 +851,32 @@
             this.label2.ForeColor = System.Drawing.Color.OrangeRed;
             this.label2.Name = "label2";
             // 
-            // tytulpodsumowanie2
-            // 
-            resources.ApplyResources(this.tytulpodsumowanie2, "tytulpodsumowanie2");
-            this.tytulpodsumowanie2.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.tytulpodsumowanie2.ForeColor = System.Drawing.Color.OrangeRed;
-            this.tytulpodsumowanie2.Name = "tytulpodsumowanie2";
-            // 
             // panel1
             // 
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.AudioOnlyCheck);
-            this.panel1.Controls.Add(this.surroundsoundcheck);
             this.panel1.Controls.Add(this.sounddisabled);
             this.panel1.Controls.Add(this.radiosound1);
             this.panel1.Controls.Add(this.podsumowanieinstrSound);
             this.panel1.Controls.Add(this.radiosoundJ);
             this.panel1.Controls.Add(this.radiosound2);
             this.panel1.Controls.Add(this.radiosoundB);
-            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // AudioOnlyCheck
             // 
             resources.ApplyResources(this.AudioOnlyCheck, "AudioOnlyCheck");
+            this.AudioOnlyCheck.ForeColor = System.Drawing.Color.Maroon;
             this.AudioOnlyCheck.Name = "AudioOnlyCheck";
             this.featuresenabledtooltip.SetToolTip(this.AudioOnlyCheck, resources.GetString("AudioOnlyCheck.ToolTip"));
             this.AudioOnlyCheck.UseVisualStyleBackColor = true;
             this.AudioOnlyCheck.CheckedChanged += new System.EventHandler(this.AudioOnlyCheck_CheckedChanged);
             // 
-            // surroundsoundcheck
-            // 
-            resources.ApplyResources(this.surroundsoundcheck, "surroundsoundcheck");
-            this.surroundsoundcheck.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.surroundsoundcheck.ForeColor = System.Drawing.Color.Black;
-            this.surroundsoundcheck.Name = "surroundsoundcheck";
-            this.featuresenabledtooltip.SetToolTip(this.surroundsoundcheck, resources.GetString("surroundsoundcheck.ToolTip"));
-            this.surroundsoundcheck.UseVisualStyleBackColor = true;
-            this.surroundsoundcheck.CheckedChanged += new System.EventHandler(this.surroundsoundcheck_CheckedChanged);
-            // 
             // sounddisabled
             // 
             resources.ApplyResources(this.sounddisabled, "sounddisabled");
+            this.sounddisabled.ForeColor = System.Drawing.Color.Maroon;
             this.sounddisabled.Name = "sounddisabled";
             this.sounddisabled.UseVisualStyleBackColor = true;
             this.sounddisabled.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged_1);
@@ -844,19 +917,6 @@
             this.radiosoundB.Name = "radiosoundB";
             this.radiosoundB.UseVisualStyleBackColor = true;
             this.radiosoundB.CheckedChanged += new System.EventHandler(this.radiosoundB_CheckedChanged);
-            // 
-            // tytulpodsumowanie
-            // 
-            resources.ApplyResources(this.tytulpodsumowanie, "tytulpodsumowanie");
-            this.tytulpodsumowanie.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.tytulpodsumowanie.ForeColor = System.Drawing.Color.OrangeRed;
-            this.tytulpodsumowanie.Name = "tytulpodsumowanie";
-            // 
-            // instrukcjapodsumowanie2
-            // 
-            resources.ApplyResources(this.instrukcjapodsumowanie2, "instrukcjapodsumowanie2");
-            this.instrukcjapodsumowanie2.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.instrukcjapodsumowanie2.Name = "instrukcjapodsumowanie2";
             // 
             // instrukcjapodsumowanie
             // 
@@ -908,11 +968,12 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.wmp1);
+            this.tabPage2.Controls.Add(this.pobinfo);
+            this.tabPage2.Controls.Add(this.pobani);
             this.tabPage2.Controls.Add(this.koniectextmask);
             this.tabPage2.Controls.Add(this.maskerror);
             this.tabPage2.Controls.Add(this.poczatektextmask);
-            this.tabPage2.Controls.Add(this.wmp1);
-            this.tabPage2.Controls.Add(this.pobinfo);
             this.tabPage2.Controls.Add(this.defaultplayer);
             this.tabPage2.Controls.Add(this.dlugosctext);
             this.tabPage2.Controls.Add(this.wyznaczkoniec);
@@ -920,6 +981,26 @@
             resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // wmp1
+            // 
+            resources.ApplyResources(this.wmp1, "wmp1");
+            this.wmp1.Name = "wmp1";
+            this.wmp1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("wmp1.OcxState")));
+            // 
+            // pobinfo
+            // 
+            resources.ApplyResources(this.pobinfo, "pobinfo");
+            this.pobinfo.Name = "pobinfo";
+            this.pobinfo.UseWaitCursor = true;
+            // 
+            // pobani
+            // 
+            resources.ApplyResources(this.pobani, "pobani");
+            this.pobani.Image = global::Clenc.Properties.Resources.blackload;
+            this.pobani.Name = "pobani";
+            this.pobani.TabStop = false;
+            this.pobani.UseWaitCursor = true;
             // 
             // koniectextmask
             // 
@@ -948,18 +1029,6 @@
             this.featuresenabledtooltip.SetToolTip(this.poczatektextmask, resources.GetString("poczatektextmask.ToolTip"));
             this.poczatektextmask.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.poczatektextmask_MaskInputRejected);
             this.poczatektextmask.TextChanged += new System.EventHandler(this.poczatektextmask_TextChanged);
-            // 
-            // wmp1
-            // 
-            resources.ApplyResources(this.wmp1, "wmp1");
-            this.wmp1.Name = "wmp1";
-            this.wmp1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("wmp1.OcxState")));
-            // 
-            // pobinfo
-            // 
-            resources.ApplyResources(this.pobinfo, "pobinfo");
-            this.pobinfo.Name = "pobinfo";
-            this.pobinfo.UseWaitCursor = true;
             // 
             // defaultplayer
             // 
@@ -1056,7 +1125,7 @@
             this.tabControl1.Controls.Add(this.tabPage7);
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Controls.Add(this.tabPage8);
+            this.tabControl1.Controls.Add(this.renderTab);
             resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -1094,7 +1163,7 @@
             // 
             resources.ApplyResources(this.renderinfo, "renderinfo");
             this.renderinfo.BackColor = System.Drawing.Color.Transparent;
-            this.renderinfo.ForeColor = System.Drawing.Color.Red;
+            this.renderinfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.renderinfo.Name = "renderinfo";
             // 
             // punktwysokoscibox
@@ -1104,7 +1173,7 @@
             this.punktwysokoscibox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.punktwysokoscibox.ForeColor = System.Drawing.Color.White;
             this.punktwysokoscibox.Name = "punktwysokoscibox";
-            this.punktwysokoscibox.TextChanged += new System.EventHandler(this.punktszerokoscibox_TextChanged);
+            this.punktwysokoscibox.TextChanged += new System.EventHandler(this.resolutionszerokoscbox_TextChanged);
             // 
             // punktszerokoscibox
             // 
@@ -1113,7 +1182,7 @@
             this.punktszerokoscibox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.punktszerokoscibox.ForeColor = System.Drawing.Color.White;
             this.punktszerokoscibox.Name = "punktszerokoscibox";
-            this.punktszerokoscibox.TextChanged += new System.EventHandler(this.punktszerokoscibox_TextChanged);
+            this.punktszerokoscibox.TextChanged += new System.EventHandler(this.resolutionszerokoscbox_TextChanged);
             // 
             // resolutionwysokoscbox
             // 
@@ -1141,7 +1210,7 @@
             this.recduration.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludePromptAndLiterals;
             this.recduration.ForeColor = System.Drawing.Color.Gray;
             this.recduration.Name = "recduration";
-            this.recduration.TextChanged += new System.EventHandler(this.punktszerokoscibox_TextChanged);
+            this.recduration.TextChanged += new System.EventHandler(this.resolutionszerokoscbox_TextChanged);
             // 
             // renderimg
             // 
@@ -1159,8 +1228,7 @@
             resources.ApplyResources(this.renderimgcontext, "renderimgcontext");
             this.renderimgcontext.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.wyświetlIWstrzymajOknoWierszaPoleceńToolStripMenuItem,
-            this.autopreviewrendering,
-            this.hdrendercheck});
+            this.autopreviewrendering});
             this.renderimgcontext.Name = "renderimgpause";
             // 
             // wyświetlIWstrzymajOknoWierszaPoleceńToolStripMenuItem
@@ -1176,13 +1244,6 @@
             this.autopreviewrendering.CheckState = System.Windows.Forms.CheckState.Checked;
             this.autopreviewrendering.Name = "autopreviewrendering";
             resources.ApplyResources(this.autopreviewrendering, "autopreviewrendering");
-            // 
-            // hdrendercheck
-            // 
-            this.hdrendercheck.CheckOnClick = true;
-            resources.ApplyResources(this.hdrendercheck, "hdrendercheck");
-            this.hdrendercheck.Name = "hdrendercheck";
-            this.hdrendercheck.CheckedChanged += new System.EventHandler(this.hdrendercheck_CheckedChanged);
             // 
             // label23
             // 
@@ -1236,29 +1297,19 @@
             this.dimensionsimg.Name = "dimensionsimg";
             this.dimensionsimg.TabStop = false;
             // 
-            // tabPage8
+            // renderTab
             // 
-            this.tabPage8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            resources.ApplyResources(this.tabPage8, "tabPage8");
-            this.tabPage8.Controls.Add(this.playencodedPoz1);
-            this.tabPage8.Controls.Add(this.splitContainer1);
-            this.tabPage8.Controls.Add(this.status);
-            this.tabPage8.Controls.Add(this.procentstatusPoz1);
-            this.tabPage8.Controls.Add(this.killprocess);
-            this.tabPage8.Controls.Add(this.KolejkaPoz1Text);
-            this.tabPage8.Controls.Add(this.encprogressbarPoz1);
-            this.tabPage8.Controls.Add(this.progresscircle);
-            this.tabPage8.Name = "tabPage8";
-            // 
-            // playencodedPoz1
-            // 
-            resources.ApplyResources(this.playencodedPoz1, "playencodedPoz1");
-            this.playencodedPoz1.BackColor = System.Drawing.Color.OrangeRed;
-            this.playencodedPoz1.FlatAppearance.BorderSize = 0;
-            this.playencodedPoz1.ForeColor = System.Drawing.Color.White;
-            this.playencodedPoz1.Name = "playencodedPoz1";
-            this.playencodedPoz1.UseVisualStyleBackColor = false;
-            this.playencodedPoz1.Click += new System.EventHandler(this.playencoded_Click);
+            this.renderTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            resources.ApplyResources(this.renderTab, "renderTab");
+            this.renderTab.Controls.Add(this.splitContainer1);
+            this.renderTab.Controls.Add(this.status);
+            this.renderTab.Controls.Add(this.procentstatus);
+            this.renderTab.Controls.Add(this.killprocess);
+            this.renderTab.Controls.Add(this.Kolejka);
+            this.renderTab.Controls.Add(this.encprogressbar);
+            this.renderTab.Controls.Add(this.progresscircle);
+            this.renderTab.Controls.Add(this.playencoded);
+            this.renderTab.Name = "renderTab";
             // 
             // splitContainer1
             // 
@@ -1269,7 +1320,7 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.Color.Transparent;
-            this.splitContainer1.Panel1.Controls.Add(this.soundbitrateinfPoz1);
+            this.splitContainer1.Panel1.Controls.Add(this.soundbitrateinf);
             this.splitContainer1.Panel1.Controls.Add(this.label3);
             // 
             // splitContainer1.Panel2
@@ -1277,13 +1328,13 @@
             this.splitContainer1.Panel2.BackColor = System.Drawing.Color.Transparent;
             this.splitContainer1.Panel2.Controls.Add(this.label16);
             this.splitContainer1.Panel2.Controls.Add(this.fserrorinf);
-            this.splitContainer1.Panel2.Controls.Add(this.filesizekbPoz1);
+            this.splitContainer1.Panel2.Controls.Add(this.filesizekb);
             // 
-            // soundbitrateinfPoz1
+            // soundbitrateinf
             // 
-            resources.ApplyResources(this.soundbitrateinfPoz1, "soundbitrateinfPoz1");
-            this.soundbitrateinfPoz1.ForeColor = System.Drawing.Color.White;
-            this.soundbitrateinfPoz1.Name = "soundbitrateinfPoz1";
+            resources.ApplyResources(this.soundbitrateinf, "soundbitrateinf");
+            this.soundbitrateinf.ForeColor = System.Drawing.Color.White;
+            this.soundbitrateinf.Name = "soundbitrateinf";
             // 
             // label3
             // 
@@ -1303,11 +1354,11 @@
             this.fserrorinf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.fserrorinf.Name = "fserrorinf";
             // 
-            // filesizekbPoz1
+            // filesizekb
             // 
-            resources.ApplyResources(this.filesizekbPoz1, "filesizekbPoz1");
-            this.filesizekbPoz1.ForeColor = System.Drawing.Color.White;
-            this.filesizekbPoz1.Name = "filesizekbPoz1";
+            resources.ApplyResources(this.filesizekb, "filesizekb");
+            this.filesizekb.ForeColor = System.Drawing.Color.White;
+            this.filesizekb.Name = "filesizekb";
             // 
             // status
             // 
@@ -1316,12 +1367,12 @@
             this.status.ForeColor = System.Drawing.Color.White;
             this.status.Name = "status";
             // 
-            // procentstatusPoz1
+            // procentstatus
             // 
-            resources.ApplyResources(this.procentstatusPoz1, "procentstatusPoz1");
-            this.procentstatusPoz1.BackColor = System.Drawing.Color.Transparent;
-            this.procentstatusPoz1.ForeColor = System.Drawing.Color.DarkGray;
-            this.procentstatusPoz1.Name = "procentstatusPoz1";
+            resources.ApplyResources(this.procentstatus, "procentstatus");
+            this.procentstatus.BackColor = System.Drawing.Color.Transparent;
+            this.procentstatus.ForeColor = System.Drawing.Color.DarkGray;
+            this.procentstatus.Name = "procentstatus";
             // 
             // killprocess
             // 
@@ -1333,25 +1384,35 @@
             this.killprocess.UseVisualStyleBackColor = false;
             this.killprocess.Click += new System.EventHandler(this.killprocess_Click);
             // 
-            // KolejkaPoz1Text
+            // Kolejka
             // 
-            resources.ApplyResources(this.KolejkaPoz1Text, "KolejkaPoz1Text");
-            this.KolejkaPoz1Text.BackColor = System.Drawing.Color.Transparent;
-            this.KolejkaPoz1Text.ForeColor = System.Drawing.Color.White;
-            this.KolejkaPoz1Text.Name = "KolejkaPoz1Text";
+            resources.ApplyResources(this.Kolejka, "Kolejka");
+            this.Kolejka.BackColor = System.Drawing.Color.Transparent;
+            this.Kolejka.ForeColor = System.Drawing.Color.White;
+            this.Kolejka.Name = "Kolejka";
             // 
-            // encprogressbarPoz1
+            // encprogressbar
             // 
-            resources.ApplyResources(this.encprogressbarPoz1, "encprogressbarPoz1");
-            this.encprogressbarPoz1.Name = "encprogressbarPoz1";
+            resources.ApplyResources(this.encprogressbar, "encprogressbar");
+            this.encprogressbar.Name = "encprogressbar";
             // 
             // progresscircle
             // 
             resources.ApplyResources(this.progresscircle, "progresscircle");
             this.progresscircle.BackColor = System.Drawing.Color.Transparent;
-            this.progresscircle.BackgroundImage = global::Clenc.Properties.Resources.settings;
+            this.progresscircle.Image = global::Clenc.Properties.Resources.settings;
             this.progresscircle.Name = "progresscircle";
             this.progresscircle.TabStop = false;
+            // 
+            // playencoded
+            // 
+            resources.ApplyResources(this.playencoded, "playencoded");
+            this.playencoded.BackColor = System.Drawing.Color.OrangeRed;
+            this.playencoded.FlatAppearance.BorderSize = 0;
+            this.playencoded.ForeColor = System.Drawing.Color.White;
+            this.playencoded.Name = "playencoded";
+            this.playencoded.UseVisualStyleBackColor = false;
+            this.playencoded.Click += new System.EventHandler(this.playencoded_Click);
             // 
             // oczekiwanienadanewielkoscMB
             // 
@@ -1373,11 +1434,6 @@
             this.featuresenabledtooltip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.featuresenabledtooltip.ForeColor = System.Drawing.Color.White;
             this.featuresenabledtooltip.IsBalloon = true;
-            // 
-            // infolabel
-            // 
-            resources.ApplyResources(this.infolabel, "infolabel");
-            this.infolabel.Name = "infolabel";
             // 
             // Form1
             // 
@@ -1403,8 +1459,8 @@
             this.tabPage5.PerformLayout();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            this.panelwiecejinfo.ResumeLayout(false);
-            this.panelwiecejinfo.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.contextMenuStrip1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -1415,6 +1471,7 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.wmp1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pobani)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.wybierznagraniemenu.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
@@ -1422,8 +1479,8 @@
             this.tabPage7.PerformLayout();
             this.renderimgcontext.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dimensionsimg)).EndInit();
-            this.tabPage8.ResumeLayout(false);
-            this.tabPage8.PerformLayout();
+            this.renderTab.ResumeLayout(false);
+            this.renderTab.PerformLayout();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
@@ -1441,9 +1498,6 @@
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.CheckBox dropmetadata;
         private System.Windows.Forms.CheckBox audiofadecheck;
-        private System.Windows.Forms.Panel panelfps;
-        private System.Windows.Forms.RadioButton fps30;
-        private System.Windows.Forms.CheckBox fpscheck;
         private System.Windows.Forms.TextBox usercommandchange;
         private System.Windows.Forms.TextBox liniakomendmeta;
         private System.Windows.Forms.TextBox liniakomend2;
@@ -1458,11 +1512,7 @@
         private System.Windows.Forms.Label labelkomendasound;
         private System.Windows.Forms.Label ustzaawansowanetext1;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TextBox wielkosciplikuboxB;
-        private System.Windows.Forms.TextBox dlugoscnagraniatext;
-        private System.Windows.Forms.TextBox bitratelabel;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label spdmaxtext;
@@ -1477,10 +1527,7 @@
         private System.Windows.Forms.RadioButton radiosoundJ;
         private System.Windows.Forms.RadioButton radiosound2;
         private System.Windows.Forms.RadioButton radiosoundB;
-        private System.Windows.Forms.Label tytulpodsumowanie;
-        private System.Windows.Forms.Label instrukcjapodsumowanie2;
         private System.Windows.Forms.Button startenc;
-        private System.Windows.Forms.Label bitratelabelinf;
         private System.Windows.Forms.Label instrukcjapodsumowanie;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Label saveplacetext;
@@ -1494,7 +1541,6 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Label powitanie1;
         private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.Label pobinfo;
         private AxWMPLib.AxWindowsMediaPlayer wmp1;
         private System.Windows.Forms.Timer oczekiwanienadanewielkoscMB;
         private System.Windows.Forms.Timer processexited1;
@@ -1538,9 +1584,7 @@
         private System.Windows.Forms.ContextMenuStrip renderimgcontext;
         private System.Windows.Forms.ToolStripMenuItem wyświetlIWstrzymajOknoWierszaPoleceńToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem autopreviewrendering;
-        private System.Windows.Forms.ToolStripMenuItem hdrendercheck;
         private System.Windows.Forms.Label resolutioninfo;
-        private System.Windows.Forms.CheckBox surroundsoundcheck;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label30;
@@ -1550,34 +1594,51 @@
         private System.Windows.Forms.CheckBox voipoptimization;
         private System.Windows.Forms.ContextMenuStrip wybierznagraniemenu;
         private System.Windows.Forms.ToolStripMenuItem nieOtwarzajNagraniaWAplikacjiToolStripMenuItem;
-        private System.Windows.Forms.CheckBox nvidiaaccelcheck;
-        private System.Windows.Forms.RadioButton fps29;
         private System.Windows.Forms.SplitContainer PodwojnyPanel;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.CheckBox ARNRcheck;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.TabPage tabPage8;
+        private System.Windows.Forms.TabPage renderTab;
         private System.Windows.Forms.Timer process2exited2;
-        private System.Windows.Forms.Label procentstatusPoz1;
+        private System.Windows.Forms.Label procentstatus;
         private System.Windows.Forms.Button killprocess;
-        private System.Windows.Forms.Label KolejkaPoz1Text;
-        private System.Windows.Forms.ProgressBar encprogressbarPoz1;
+        private System.Windows.Forms.Label Kolejka;
         private System.Windows.Forms.PictureBox progresscircle;
         private System.Windows.Forms.Label status;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.Label soundbitrateinfPoz1;
+        private System.Windows.Forms.Label soundbitrateinf;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label fserrorinf;
-        private System.Windows.Forms.Label filesizekbPoz1;
-        private System.Windows.Forms.Button playencodedPoz1;
+        private System.Windows.Forms.Label filesizekb;
+        private System.Windows.Forms.Button playencoded;
         private System.Windows.Forms.Label featureslogo;
         private System.Windows.Forms.ToolTip featuresenabledtooltip;
         private System.Windows.Forms.Label zapasdzwiektext;
-        private System.Windows.Forms.Panel panelwiecejinfo;
         private System.Windows.Forms.CheckBox optimizebits;
         private System.Windows.Forms.Label infolabel;
+        private System.Windows.Forms.Label bitratelabelinf;
+        private System.Windows.Forms.ProgressBar encprogressbar;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pobani;
+        private System.Windows.Forms.Label pobinfo;
+        private System.Windows.Forms.Button hwaccelmodel;
+        private System.Windows.Forms.CheckBox nvidiaaccelcheck;
+        private System.Windows.Forms.ToolStripMenuItem zdalnyRenderToolStripMenuItem;
+        private System.Windows.Forms.CheckBox fpscheck;
+        private System.Windows.Forms.Panel panelfps;
+        private System.Windows.Forms.RadioButton fps60;
+        private System.Windows.Forms.RadioButton fps29;
+        private System.Windows.Forms.RadioButton fps30;
+        private System.Windows.Forms.RadioButton fps48;
+        private System.Windows.Forms.RadioButton fps50;
+        private System.Windows.Forms.RadioButton fpsPAL;
+        private System.Windows.Forms.CheckBox removemeta;
+        private System.Windows.Forms.TextBox advancedendtime;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox advancedstarttime;
+        private System.Windows.Forms.Label label9;
     }
 }
 

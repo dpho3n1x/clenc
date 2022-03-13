@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Numerics;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Clenc
@@ -26,18 +27,16 @@ namespace Clenc
         public string mapowanieaudio = "-map 0:a:0";
         public string bitratewideouser = "1000k";
         public int sekundykoniec = 10;
-        public string metadane = "-metadata comment=" + '"' + "Clenc by Sho" + '"';
         public string priority = "start /B /W /low ";
         public BigInteger oczekiwanawielkoscpliku = 65536;
         public int megabajty = 8;
-        public BigInteger bajty = 8388600;
+        public BigInteger bajty = 8388605;
         public int enctimer;
         public string fpschange;
         public string usersettingstext;
         public string audiofade;
         public int audiofadeout;
         public int TotalSeconds = 20;
-        public string cputhreads = "-threads " + Environment.ProcessorCount;
         readonly Process process = new Process();
         readonly ProcessStartInfo startInfo = new ProcessStartInfo();
         readonly Process process2 = new Process();
@@ -53,18 +52,22 @@ namespace Clenc
         public string fileName;
         public int bitmapn;
         public string videodimensions;
-        public int imgrenderjakosc = 8;
         public BigInteger wielkoscaudioobliczony;
         public BigInteger przewidywanybitrateaudio;
-        public BigInteger przewidywanybitrateaudioKb;
+        public int przewidywanybitrateaudioKb;
         public int RawVideo;
         public int kanalyaudio = 2;
         public string voipoptimizationcmd;
         public BigInteger wielkoscplikucurrent;
         public FileInfo CurrentFileSize;
-        public string nvaccel;
+        public string nvaccel = "-hwaccel dxva2";
         public string arnrplus = " -arnr_max_frames 15 -arnr_strength 6 -arnr_type 3";
         public int altrefenabled = 1;
+        public int zbytdlugiczas = 0;
+        public int FsErrCount = 0;
+        public int dopuszczalnybitrateaudio = 128;
+        public string removemetacmd = " -map_metadata -1";
+        public int tiles = 0;
 
         private void ustawpoczatek_Click(object sender, EventArgs e)
         {
@@ -123,7 +126,7 @@ namespace Clenc
                 sekundywideo = sekundykoniec - sekundypoczatek;
                 textsekundy = sekundywideo.ToString();
                 dlugosctext.Text = textsekundy + "s";
-                dlugoscnagraniatext.Text = textsekundy + "s";
+                bitratelabelinf.Text = "Przewidywany bitrate: " + wielkosciplikubox.Text + "MB / " + sekundywideo + "s = " + bitratewideo + "kb/s";
             }
             else
             {
@@ -155,7 +158,6 @@ namespace Clenc
                 tabControl1.SelectTab("tabPage4");
                 ObliczanieBitrateDiscord();
                 ObliczanieAF();
-                GenerowanieCMD();
                 WyznaczanieCzasu();
             }
         }
@@ -170,22 +172,34 @@ namespace Clenc
             if (sekundywideo > 0)
             {
                 bitratewideo = (oczekiwanawielkoscpliku / sekundywideo) - audiozapassuwak.Value;
-                bitratelabel.Text = bitratewideo + "k";
-                GenerowanieCMD();
+                bitratelabelinf.Text = "Przewidywany bitrate: " + wielkosciplikubox.Text + "MB / " + sekundywideo + "s = " + bitratewideo + "kb/s";
+                GenerowanieCMDVideo();
+                GenerowanieCMDAudio();
             }
         }
 
-        public void GenerowanieCMD()
+        public void GenerowanieCMDVideo()
         {
             if (usersettings.Checked == true)
             {
                 usersettingstext = usercommandchange.Text + " ";
             }
-            string cmdtext = "ffmpeg -y -hide_banner " + nvaccel + " -ss " + poczatek + " -i " + '"' + plikzrodlowy + '"' + " -c:v " + kodekwideo + " -cpu-used " + encspdtrack.Value + arnrplus + " -row-mt 1 -g 990 -tile-rows 0 -tile-columns 0 " + cputhreads + " -lag-in-frames " + laginframesnum + " -auto-alt-ref " + altrefenabled + " " + fpschange + " -an -map 0:v:0 " + usersettingstext + "-b:v " + bitratelabel.Text + " -t " + sekundywideo + " " + videodimensions + " -f webm -passlogfile CLENCguilog -pass ";
-            liniakomend.Text =  cmdtext + "1 .\\tempdir\\videop1.webm";
-            liniakomend2.Text = cmdtext + "2 .\\tempdir\\videop2.webm";
-            liniakomendaudio.Text = "ffmpeg -y -hide_banner -ss " + poczatek + " -i " + '"' + plikzrodlowy + '"' + " " + mapowanieaudio + " -vn " + voipoptimizationcmd + audiofade + "-t " + sekundywideo + " -c:a libopus -frame_duration 120 -ac " + kanalyaudio + " -b:a ";
-            liniakomendmeta.Text = metadane;
+            string cmdtext = "ffmpeg -y -hide_banner " + nvaccel + " -ss " + poczatek + advancedstarttime.Text + " -i " + '"' + plikzrodlowy + '"' + " -c:v " + kodekwideo + " -cpu-used " + encspdtrack.Value + arnrplus + removemetacmd + " -row-mt 1 -g 990 -pix_fmt yuv420p -tile-rows " + tiles + " -tile-columns " + tiles + " -threads " + Environment.ProcessorCount + " -lag-in-frames " + laginframesnum + " -auto-alt-ref " + altrefenabled + " " + fpschange + " -an -map 0:v:0 " + usersettingstext + "-b:v " + bitratewideo + "k -t " + sekundywideo + advancedendtime.Text + " " + videodimensions + " -f webm -passlogfile CLENCguilog -pass ";
+            if (!zdalnyRenderToolStripMenuItem.Checked)
+            {
+                liniakomend.Text = cmdtext + "1 -";
+                liniakomend2.Text = cmdtext + "2 .\\tempdir\\videop2.webm";
+            }
+            else
+            {
+                liniakomend.Text = cmdtext + "1 videop1.mp4";
+                liniakomend2.Text = cmdtext + "2 videop2.mp4";
+            }
+        }
+
+        public void GenerowanieCMDAudio()
+        {
+            liniakomendaudio.Text = "ffmpeg -y -ss " + poczatek + " -i " + '"' + plikzrodlowy + '"' + " " + mapowanieaudio + " -vn " + voipoptimizationcmd + audiofade + "-t " + sekundywideo + removemetacmd + " -c:a libopus -frame_duration 120 -ac " + kanalyaudio + " -b:a ";
         }
 
         public void ObliczanieAF()
@@ -222,18 +236,18 @@ namespace Clenc
 
         public void RenderowanieNagrania()
         {
-            KolejkaPoz1Text.Text = saveplacetext.Text + " | " + dlugoscnagraniatext.Text + " | " + wielkosciplikubox.Text + "MB";
+            Kolejka.Text = "💾 " + saveplacetext.Text + " | ⏱" + sekundywideo + "s | 📏" + wielkosciplikubox.Text + "MB";
             encodertimesec = 0;
+            tabControl1.SelectTab("renderTab");
             splitContainer1.Visible = false;
             WylaczForms();
-            tabControl1.SelectTab("tabPage8");
             if (wyłaczOptymalizacjęWMPToolStripMenuItem.Checked == true)
             {
                 wmp1.close();
             }
             killprocess.Visible = true;
             fserrorinf.Visible = false;
-            encprogressbarPoz1.Style = ProgressBarStyle.Marquee;
+            encprogressbar.Style = ProgressBarStyle.Marquee;
             status.Text = "Przygotowywanie...";
             Process processX = new Process();
             ProcessStartInfo startInfoX = new ProcessStartInfo
@@ -246,21 +260,27 @@ namespace Clenc
             processX.Start();
             processX.WaitForExit();
             bitmapn++;
+            if (zdalnyRenderToolStripMenuItem.Checked == true)
+            {
+                ZdalnyRenderE1();
+                return;
+            }
+
             Process processimg = new Process();
             ProcessStartInfo startInfoImg = new ProcessStartInfo
             {
                 WindowStyle = ProcessWindowStyle.Hidden,
                 FileName = "cmd.exe",
-                Arguments = "/C ffmpeg -y " + nvaccel + " -hide_banner -ss " + poczatek + " -i " + '"' + plikzrodlowy + '"' + " -map 0:v:0 -filter_complex smartblur=lr=5,eq=brightness=-0.3 -q:v 1 -frames:v 1 .\\tempdir\\backgroundimg" + bitmapn + ".jpg"
+                Arguments = "/C ffmpeg -y " + nvaccel + " -ss " + poczatek + " -i " + '"' + plikzrodlowy + '"' + " -map 0:v:0 -filter_complex smartblur=lr=5,eq=brightness=-0.3 -q:v 1 -frames:v 1 .\\tempdir\\backgroundimg" + bitmapn + ".jpg"
             };
             processimg.StartInfo = startInfoImg;
             processimg.Start();
 
-            progresscircle.BackgroundImage = Resources.Process1;
+            progresscircle.Image = Resources.aniload;
+            renderTab.Text = "🔄 Renderowanie [Etap 1/3]";
 
             if (!AudioOnlyCheck.Checked)
             {
-                status.Text = "[Etap 1/3] Enkodowanie nagrania Pass 1/2";
                 if (niePokazujOknaWierszaPoleceńToolStripMenuItem.Checked == true)
                 {
                     startInfo.WindowStyle = ProcessWindowStyle.Hidden;
@@ -282,6 +302,47 @@ namespace Clenc
             }
         }
 
+        public void ZdalnyRenderE1()
+        {
+            status.Text = "Trwa szyfrowanie nagrania źródłowego...";
+            Process processimg = new Process();
+            ProcessStartInfo startInfoImg = new ProcessStartInfo
+            {
+                WindowStyle = ProcessWindowStyle.Minimized,
+                FileName = "cmd.exe",
+                Arguments = "/C ffmpeg -y -hide_banner -i " + '"' + plikzrodlowy + '"' + " -c copy -f mp4 -strict -2 -to " + koniectextmask.Text + " -movflags +faststart -encryption_scheme cenc-aes-ctr -encryption_key 4d696368616c4a657354686542657374 -encryption_kid 30303030303030303030303030303031 " + '"' + miejsceZapisu + "-video.mp4" + '"'
+            };
+            processimg.StartInfo = startInfoImg;
+            processimg.Start();
+            processimg.WaitForExit();
+
+            nvaccel = "-decryption_key 4d696368616c4a657354686542657374";
+
+            Process processaudio = new Process();
+            ProcessStartInfo startInfoaudio = new ProcessStartInfo
+            {
+                WindowStyle = ProcessWindowStyle.Minimized,
+                FileName = "cmd.exe",
+                Arguments = "/C ffmpeg -y -hide_banner -ss " + poczatek + " -i " + '"' + plikzrodlowy + '"' + " -vn -strict -2 -c copy -t " + sekundywideo + " -f mp4 " + '"' + miejsceZapisu + "-audioonly.m4a" + '"'
+            };
+            processaudio.StartInfo = startInfoaudio;
+            processaudio.Start();
+            processaudio.WaitForExit();
+
+            plikzrodlowy = "oryginal.mp4";
+            usersettings.Checked = true;
+            usercommandchange.Text = usercommandchange.Text + " -movflags +faststart -encryption_scheme cenc-aes-ctr -encryption_key 4d696368616c4a657374426573743037 -encryption_kid 30303030303030303030303030303031";
+            GenerowanieCMDVideo();
+            string[] lines =
+                {
+                    liniakomend.Text, liniakomend2.Text, liniakomendaudio.Text
+                };
+
+            File.WriteAllLines("Komendy.txt", lines);
+            MessageBox.Show("W folderze aplikacji znajdują się wszystkie potrzebne pliki. Przenieś oryginal.mp4 na zewnętrzny komputer i wklej komendy znajdujące się w Komendy.txt","Gotowe do wykonania etapu 1", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Application.Exit();
+        }
+
         public void GenerowanieDzwieku()
         {
             if (AudioOnlyCheck.Checked != true)
@@ -296,30 +357,16 @@ namespace Clenc
 
             wielkoscaudioobliczony = bajty - RawVideo;
             przewidywanybitrateaudio = BigInteger.Divide(wielkoscaudioobliczony, sekundywideo);
-            przewidywanybitrateaudioKb = BigInteger.Divide(przewidywanybitrateaudio, 128);
-            if (precisiontrack.Value == 2)
-            {
-                przewidywanybitrateaudioKb += 18;
-            }
-            if (precisiontrack.Value == 1)
-            {
-                przewidywanybitrateaudioKb += 9;
-            }
+            przewidywanybitrateaudioKb = (int)BigInteger.Divide(przewidywanybitrateaudio, 128);
 
-            if (kanalyaudio == 2)
-            {
-                if (przewidywanybitrateaudioKb > 192)
-                {
-                    przewidywanybitrateaudioKb = 192;
-                }
-            }
-            else
-            {
-                if (przewidywanybitrateaudioKb > 320)
-                {
-                    przewidywanybitrateaudioKb = 320;
-                }
-            }
+            if (przewidywanybitrateaudioKb > 160)
+                przewidywanybitrateaudioKb = 160;
+
+            if (precisiontrack.Value == 2)
+                przewidywanybitrateaudioKb += 18;
+            
+            if (precisiontrack.Value == 1)
+                przewidywanybitrateaudioKb += 9;
 
             if (przewidywanybitrateaudioKb < 6)
             {
@@ -333,7 +380,7 @@ namespace Clenc
         public void TworzenieAudio()
         {
                 status.Text = "[Etap 3/3] Enkodowanie Audio " + przewidywanybitrateaudioKb + "kb/s";
-                soundbitrateinfPoz1.Text = przewidywanybitrateaudioKb + "kb/s";
+                soundbitrateinf.Text = przewidywanybitrateaudioKb + "kb/s";
                 Process soundprocess = new Process();
                 ProcessStartInfo startInfoS = new ProcessStartInfo
                 {
@@ -369,28 +416,31 @@ namespace Clenc
             FileInfo Opus1F = new FileInfo(".\\tempdir\\opus" + przewidywanybitrateaudioKb + "k.opus");
             int Opus1size = (int)Opus1F.Length;
             int fullsize = RawVideo + Opus1size;
-                soundbitrateinfPoz1.Text = przewidywanybitrateaudioKb + "kb/s (" + Opus1size / 1024 + "KB)";
-                if (fullsize < bajty)
+                soundbitrateinf.Text = przewidywanybitrateaudioKb + "kb/s (" + Opus1size / 1024 + "KB)";
+            if (fullsize < bajty)
+            {
+                if (optimizebits.Checked == true && audiozapassuwak.Value != 0 && przewidywanybitrateaudioKb > 144)
                 {
-                    if (przewidywanybitrateaudioKb > 150 && optimizebits.Checked == true && audiozapassuwak.Value > 6)
-                    {
-                    audiozapassuwak.Value = 0;
-                    zapasdzwiektext.Text = "0kb/s";
-                    var notification = new NotifyIcon()
-                    {
-                        Visible = true,
-                        Icon = SystemIcons.Warning,
-                        BalloonTipText = "Wyrenderowane nagranie zajmuje mniej miejsca niż jest ustawione. Renderowanie zostanie powtórzone.",
-                        BalloonTipTitle = "Wymuszona optymalizacja wielkości"
-                    };
-                    if (wyświetlPowiadomieniePoZakończeniuProcesuToolStripMenuItem.Checked == true)
-                    {
-                        notification.ShowBalloonTip(7000);
-                    }
-                    GenerowanieCMD();
-                    RenderowanieNagrania();
-                    return;
-                    }
+                        audiozapassuwak.Value = 0;
+                        optimizebits.Checked = false;
+                        zapasdzwiektext.Text = "0kb/s";
+                        var notification = new NotifyIcon()
+                        {
+                            Visible = true,
+                            Icon = SystemIcons.Warning,
+                            BalloonTipText = "Wyrenderowane nagranie zajmuje mniej miejsca niż jest ustawione. Renderowanie zostanie powtórzone.",
+                            BalloonTipTitle = "Wymuszona optymalizacja wielkości"
+                        };
+                        if (wyświetlPowiadomieniePoZakończeniuProcesuToolStripMenuItem.Checked == true)
+                        {
+                            notification.ShowBalloonTip(7000);
+                        }
+                        GenerowanieCMDVideo();
+                        GenerowanieCMDAudio();
+                        RenderowanieNagrania();
+                        return;
+                } 
+
                 if (AudioOnlyCheck.Checked != true)
                     {
                         Process soundprocess2 = new Process();
@@ -398,7 +448,7 @@ namespace Clenc
                         {
                             WindowStyle = ProcessWindowStyle.Hidden,
                             FileName = "cmd.exe",
-                            Arguments = "/C ffmpeg -y -hide_banner -i .\\tempdir\\videop2.webm -i .\\tempdir\\opus" + przewidywanybitrateaudioKb + "k.opus " + metadane + " -c copy " + mapowanieaudio2k + '"' + miejsceZapisu + '"'
+                            Arguments = "/C ffmpeg -y -i .\\tempdir\\videop2.webm -i .\\tempdir\\opus" + przewidywanybitrateaudioKb + "k.opus " + liniakomendmeta.Text + " -c copy " + mapowanieaudio2k + '"' + miejsceZapisu + '"'
                         };
                         soundprocess2.StartInfo = soundstartInfo2;
                         soundprocess2.Start();
@@ -411,7 +461,7 @@ namespace Clenc
                         {
                             WindowStyle = ProcessWindowStyle.Hidden,
                             FileName = "cmd.exe",
-                            Arguments = "/C ffmpeg -y -hide_banner -i .\\tempdir\\opus" + przewidywanybitrateaudioKb + "k.opus -i .\\tempdir\\opus" + przewidywanybitrateaudioKb + "k.opus " + metadane + " -c copy " + mapowanieaudio2k + '"' + miejsceZapisu + '"'
+                            Arguments = "/C ffmpeg -y -i .\\tempdir\\opus" + przewidywanybitrateaudioKb + "k.opus -i .\\tempdir\\opus" + przewidywanybitrateaudioKb + "k.opus " + liniakomendmeta.Text + " -c copy " + mapowanieaudio2k + '"' + miejsceZapisu + '"'
                         };
                         soundprocess2.StartInfo = soundstartInfo2;
                         soundprocess2.Start();
@@ -441,14 +491,15 @@ namespace Clenc
                     {
                         zapasdzwiektext.Text = "160kb/s";
                         audiozapassuwak.Value = 160;
-                        GenerowanieCMD();
+                        GenerowanieCMDVideo();
+                        GenerowanieCMDAudio();
                         RenderowanieNagrania();
                         return;
                     }
                     else
                     {
-                        encprogressbarPoz1.Value = 0;
-                        procentstatusPoz1.Text = "Błąd";
+                        encprogressbar.Value = 0;
+                        procentstatus.Text = "Błąd";
                         status.Text = "Renderowanie przerwane";
                         tabControl1.SelectTab("tabPage4");
                         AktywujForms();
@@ -461,6 +512,7 @@ namespace Clenc
 
         public void EncZakonczone()
         {
+            renderTab.Text = "🔄 Renderowanie";
             var notification = new NotifyIcon()
             {
                 Visible = true,
@@ -473,15 +525,15 @@ namespace Clenc
                 notification.ShowBalloonTip(7000);
             }
             AktywujForms();
-                encprogressbarPoz1.Style = ProgressBarStyle.Blocks;
-                tabPage8.BackgroundImage = null;
-                encprogressbarPoz1.Value = 100;
+                encprogressbar.Style = ProgressBarStyle.Blocks;
+                renderTab.BackgroundImage = null;
+                encprogressbar.Value = 100;
                 enctimer1.Enabled = true;
-                soundbitrateinfPoz1.Enabled = true;
-                filesizekbPoz1.Enabled = true;
-                progresscircle.BackgroundImage = Resources.check;
+                soundbitrateinf.Enabled = true;
+                filesizekb.Enabled = true;
+                progresscircle.Image = Resources.check;
                 status.Text = "Zakończono Enkodowanie w " + encodertimesec + "s";
-                playencodedPoz1.Enabled = true;
+                playencoded.Visible = true;
                 if (nieCzyśćFolderuTymczasowegoPoZakończeniuToolStripMenuItem.Checked == false)
                 {
                     Process processX2 = new Process();
@@ -501,14 +553,14 @@ namespace Clenc
         {
             mapowanieaudio = "-map 0:a:0";
             audiofadecheck.Enabled = true;
-            GenerowanieCMD();
+            GenerowanieCMDAudio();
         }
 
         private void radiosound2_CheckedChanged(object sender, EventArgs e)
         {
             mapowanieaudio = "-map 0:a:1";
             audiofadecheck.Enabled = true;
-            GenerowanieCMD();
+            GenerowanieCMDAudio();
         }
 
         private void radiosoundB_CheckedChanged(object sender, EventArgs e)
@@ -526,7 +578,7 @@ namespace Clenc
                 audiofadecheck.Enabled = true;
                 audiozapassuwak.Value = 2;
             }
-            GenerowanieCMD();
+            GenerowanieCMDAudio();
         }
 
         private void radiosoundJ_CheckedChanged(object sender, EventArgs e)
@@ -535,23 +587,19 @@ namespace Clenc
             audiofadecheck.Checked = false;
             audiofade = "";
             audiofadecheck.Enabled = false;
-            GenerowanieCMD();
+            GenerowanieCMDAudio();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            liniakomendmeta.Text = metadane;
             ObliczanieBitrateDiscord();
             liniakomendaudio.Text = liniakomendaudio.Text;
         }
 
-        private void bitratelabel_Click(object sender, EventArgs e)
-        {
-        }
-
         private void bitratelabel_TextChanged(object sender, EventArgs e)
         {
-            GenerowanieCMD();
+            GenerowanieCMDVideo();
+            GenerowanieCMDAudio();
         }
 
         private void timerdatadownload_Tick(object sender, EventArgs e)
@@ -591,12 +639,21 @@ namespace Clenc
             sekundywideo = (sekundykoniec - sekundypoczatek) + 1;
             textsekundy = sekundywideo.ToString();
             dlugosctext.Text = textsekundy + "s";
-            dlugoscnagraniatext.Text = textsekundy + "s";
+            bitratelabelinf.Text = "Przewidywany bitrate: " + wielkosciplikubox.Text + "MB / " + sekundywideo + "s = " + bitratewideo + "kb/s";
             if (koniectextmask.Text != "00:00:01" && koniectextmask.Text != "00:00:1")
             {
                 wmp1.Visible = true;
-                pobinfo.Visible = false;
                 timerdatadownload.Enabled = false;
+            }
+
+            zbytdlugiczas += 1;
+            if (zbytdlugiczas >= 40)
+            {
+                pobinfo.Text = "Wczytywanie trwa dłużej niż zwykle...";
+            }
+            if (zbytdlugiczas >= 80)
+            {
+                pobinfo.Text = "Prawdopodobnie kodek nagrania nie jest obsługiwany.\nAby rozwiązać problem spróbuj: Doinstalować kodeki do Windows Media Player\n lub otwórz nagranie klikając PPM na przycisk [Wybierz nagranie] na dole pierwszej strony.";
             }
         }
 
@@ -632,8 +689,7 @@ namespace Clenc
                 maskerror2.Visible = false;
                 BigInteger Oczekiwanawielkoscplikubox = BigInteger.Parse(wielkosciplikubox.Text);
                 oczekiwanawielkoscpliku = Oczekiwanawielkoscplikubox * 8192;
-                bajty = oczekiwanawielkoscpliku * 128 - 8;
-                wielkosciplikuboxB.Text = bajty.ToString();
+                bajty = oczekiwanawielkoscpliku * 128 - 3;
                 ObliczanieBitrateDiscord();
             }
             else
@@ -658,17 +714,30 @@ namespace Clenc
             else
             {
                 panelfps.Visible = false;
+                fps60.Checked = false;
+                fps50.Checked = false;
                 fps30.Checked = false;
                 fps29.Checked = false;
+                fpsPAL.Checked = false;
+                fpschange = "";
+                GenerowanieCMDVideo();
             }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+                FsErrCount++;
+                if (FsErrCount >= 3)
+                {
+                filesizekb.Text = "N/A";
+                enctimer1.Enabled = false;
+                return;
+                }
+
                 FileInfo ExitFileSize = new FileInfo(miejsceZapisu);
                 int wielkoscplikukb = (int)ExitFileSize.Length;
                 int exitfs = wielkoscplikukb / 1024;
-                filesizekbPoz1.Text = exitfs + "KB";
+                filesizekb.Text = exitfs + "KB";
                 enctimer1.Enabled = false;
         }
 
@@ -691,11 +760,7 @@ namespace Clenc
             {
                 fpschange = " -r 30";
             }
-            else
-            {
-                fpschange = "";
-            }
-            GenerowanieCMD();
+            GenerowanieCMDVideo();
         }
 
         private void usersettings_CheckedChanged(object sender, EventArgs e)
@@ -707,6 +772,7 @@ namespace Clenc
             else
             {
                 usercommandchange.Visible = false;
+                usercommandchange.Text = "";
             }
         }
 
@@ -715,27 +781,23 @@ namespace Clenc
             if (audiofadecheck.Checked == false)
             {
                 audiofade = "";
-                liniakomendaudio.Text = liniakomendaudio.Text;
             }
             else
             {
                 ObliczanieAF();
-                liniakomendaudio.Text = liniakomendaudio.Text;
             }
-            GenerowanieCMD();
+            GenerowanieCMDAudio();
         }
 
         private void dropmetadata_CheckedChanged(object sender, EventArgs e)
         {
             if (dropmetadata.Checked == true)
             {
-                metadane = "-map_metadata -1";
-                liniakomendmeta.Text = metadane;
+                liniakomendmeta.Text = "-map_metadata -1";
             }
             else
             {
-                metadane = "-metadata comment=" + '"' + "Clenc by Sho" + '"';
-                liniakomendmeta.Text = metadane;
+                liniakomendmeta.Text = "-metadata copyright=" + '"' + "Sho#9398" + '"';
             }
         }
 
@@ -776,11 +838,11 @@ namespace Clenc
             {
                 if (File.Exists(".\\tempdir\\backgroundimg" + bitmapn + ".jpg"))
                 {
-                    tabPage8.BackgroundImage = new Bitmap(".\\tempdir\\backgroundimg" + bitmapn + ".jpg");
+                    renderTab.BackgroundImage = new Bitmap(".\\tempdir\\backgroundimg" + bitmapn + ".jpg");
                 }
-                encprogressbarPoz1.Style = ProgressBarStyle.Blocks;
-                procentstatusPoz1.Visible = true;
-                progresscircle.BackgroundImage = Resources.Process2;
+                encprogressbar.Style = ProgressBarStyle.Blocks;
+                renderTab.Text = "🔄 Renderowanie [Etap 2/3]";
+                procentstatus.Visible = true;
                 if (niePokazujOknaWierszaPoleceńToolStripMenuItem.Checked == true)
                 {
                     startInfo2.WindowStyle = ProcessWindowStyle.Hidden;
@@ -800,7 +862,7 @@ namespace Clenc
             {
                 encodertimesec++;
                 CurrentFileSize = new FileInfo(".\\tempdir\\videop2.webm");
-                status.Text = "[Etap 1/3] Enkodowanie nagrania Pass 1/2 - " + encodertimesec + "s";
+                status.Text = "[Etap 1/3] Enkodowanie nagrania Pass 1 - ⏱" + encodertimesec + "s";
                 featureslogo.Text = "Renderowanie: 0%";
             }
         }
@@ -810,11 +872,11 @@ namespace Clenc
                 if (process2.HasExited == true)
                 {
                     processexited2.Enabled = false;
-                    encprogressbarPoz1.Value = 100;
-                    procentstatusPoz1.Text = "100%";
+                    encprogressbar.Value = 100;
+                renderTab.Text = "🔄 Renderowanie [Etap 3/3]";
+                procentstatus.Text = "100%";
                     if (sounddisabled.Checked == false)
                     {
-                        progresscircle.BackgroundImage = Resources.Process3;
                         GenerowanieDzwieku();
                     }
                     else
@@ -830,12 +892,12 @@ namespace Clenc
                     {
                         WindowStyle = ProcessWindowStyle.Hidden,
                         FileName = "cmd.exe",
-                        Arguments = "/C ffmpeg -y -hide_banner -i .\\tempdir\\videop2.webm " + liniakomendmeta.Text + " -c copy " + '"' + miejsceZapisu + '"'
+                        Arguments = "/C ffmpeg -y -i .\\tempdir\\videop2.webm " + liniakomendmeta.Text + " -c copy " + '"' + miejsceZapisu + '"'
                 };
                         processAN.StartInfo = startInfoAN;
                         processAN.Start();
                         processAN.WaitForExit();
-                        soundbitrateinfPoz1.Text = "Dźwięk wyłączony";
+                        soundbitrateinf.Text = "Dźwięk wyłączony";
                         EncZakonczone();
                     }
                 }
@@ -843,8 +905,8 @@ namespace Clenc
                 {
                 encodertimesec++;
                 CurrentFileSize = new FileInfo(".\\tempdir\\videop2.webm");
-                status.Text = "[Etap 2/3] Enkodowanie nagrania Pass 2/2 - " + encodertimesec.ToString() + "s";
-                wielkoscplikucurrent = 10 + 100 * (int)CurrentFileSize.Length / bajty;
+                status.Text = "[Etap 2/3] Enkodowanie nagrania Pass 2 - ⏱" + encodertimesec.ToString() + "s";
+                wielkoscplikucurrent = 10 + 100 * CurrentFileSize.Length / bajty;
                     if (wielkoscplikucurrent < 0)
                     {
                         return;
@@ -852,10 +914,10 @@ namespace Clenc
 
                     if (wielkoscplikucurrent < 100)
                     {
-                        encprogressbarPoz1.Value = (int)wielkoscplikucurrent;
-                        procentstatusPoz1.Text = (int)wielkoscplikucurrent + "%";
-                    }
-                featureslogo.Text = "Renderowanie: " + (int)wielkoscplikucurrent + "%";
+                        encprogressbar.Value = (int)wielkoscplikucurrent;
+                        procentstatus.Text = wielkoscplikucurrent + "%";
+                        featureslogo.Text = "Renderowanie: " + wielkoscplikucurrent + "%";
+                }
             }
         }
 
@@ -874,7 +936,7 @@ namespace Clenc
                 {
                     openFileDialog.Filter = "Nagrania (*.mp4; *.mkv; *.webm, *.mov, *.avi)|*.mp4;*mkv;*.webm;*.mov|Muzyka (*.mp3; *.flac, *.wav, *.m4a, *.aac, *.ogg)|*.ogg;*.mp3;*.flac;*.wav;*.m4a;*.aac|Wszystkie pliki (*.*)|*.*";
                     openFileDialog.FilterIndex = 1;
-                    openFileDialog.Title = "Znajdź nagranie do enkodowania";
+                    openFileDialog.Title = "Wybierz nagranie do enkodowania";
                     openFileDialog.RestoreDirectory = true;
 
                     if (openFileDialog.ShowDialog() == DialogResult.OK)
@@ -922,10 +984,8 @@ namespace Clenc
 
         private void tabPage4_Enter(object sender, EventArgs e)
         {
-                if (killprocess.Visible == false)
+                if (maskerror.Visible == false && maskerror2.Visible == false && miejsceZapisu != "Brak" && plikzrodlowy != "Brak" && killprocess.Visible == false)
                 {
-                    if (maskerror.Visible == false && maskerror2.Visible == false && miejsceZapisu != "Brak" && plikzrodlowy != "Brak" && bitratelabel.Text != "N/A" && dlugoscnagraniatext.Text != "N/A")
-                    {
                         startenc.Enabled = true;
                         status.Text = "Gotowy do enkodowania";
                     }
@@ -933,8 +993,6 @@ namespace Clenc
                     {
                         startenc.Enabled = false;
                         status.Text = "Przed rozpoczęciem wykonaj podstawowe kroki";
-                        progresscircle.BackgroundImage = Resources.settings;
-                    }
                 }
 
             featureslogo.Text = "";
@@ -1001,19 +1059,17 @@ namespace Clenc
         {
             if (sounddisabled.Checked == true)
             {
-                surroundsoundcheck.Enabled = false;
                 AudioOnlyCheck.Enabled = false;
                 labelkomendasound.Enabled = false;
                 liniakomendaudio.Enabled = false;
                 audiofadecheck.Checked = false;
                 audiofadecheck.Enabled = false;
                 liniakomendaudio.Text = "Dźwięk wyłączony";
-                audiozapassuwak.Value = 40;
+                audiozapassuwak.Value = 20;
                 PodwojnyPanel.Panel1Collapsed = true;
             }
             else
             {
-                surroundsoundcheck.Enabled = true;
                 AudioOnlyCheck.Enabled = true;
                 labelkomendasound.Enabled = true;
                 liniakomendaudio.Enabled = true;
@@ -1026,14 +1082,12 @@ namespace Clenc
             if (av1check.Checked == true)
             {
                 kodekwideo = "libaom-av1";
-                laginframesnum = 35;
                 encspdtrack.Value = 2;
                 ARNRcheck.Checked = false;
             }
             else
             {
                 kodekwideo = "libvpx-vp9";
-                laginframesnum = 25;
                 encspdtrack.Value = 0;
             }
         }
@@ -1074,14 +1128,17 @@ namespace Clenc
             {
                 altrefenabled = 0;
                 laginframesnum = 1;
+                tiles = 1;
             }
 
-            if (av1check.Checked == false && encspdtrack.Value < 4)
+            if (encspdtrack.Value < 4)
             {
                 altrefenabled = 1;
                 laginframesnum = 25;
+                tiles = 0;
             }
-            GenerowanieCMD();
+            GenerowanieCMDVideo();
+            GenerowanieCMDAudio();
         }
 
         private void poczatektextmask_TextChanged(object sender, EventArgs e)
@@ -1110,11 +1167,9 @@ namespace Clenc
 
         public void AktywujForms()
         {
-            procentstatusPoz1.Visible = false;
+            procentstatus.Visible = false;
             AudioOnlyCheck.Enabled = true;
-            surroundsoundcheck.Enabled = true;
             encspdtrack.Enabled = true;
-            bitratelabel.Enabled = true;
             wielkosciplikubox.Enabled = true;
             radiosound1.Enabled = true;
             radiosound2.Enabled = true;
@@ -1127,11 +1182,10 @@ namespace Clenc
 
         public void WylaczForms()
         {
+            playencoded.Visible = false;
             startenc.Enabled = false;
             AudioOnlyCheck.Enabled = false;
-            surroundsoundcheck.Enabled = false;
             encspdtrack.Enabled = false;
-            bitratelabel.Enabled = false;
             wielkosciplikubox.Enabled = false;
             radiosound1.Enabled = false;
             radiosound2.Enabled = false;
@@ -1189,24 +1243,25 @@ namespace Clenc
         public void updatedimensions()
         {
             videodimensions = "-vf " + '"' + "crop=" + resolutionszerokoscbox.Text + ":" + resolutionwysokoscbox.Text + ":" + punktszerokoscibox.Text + ":" + punktwysokoscibox.Text + '"';
-            GenerowanieCMD();
+            GenerowanieCMDVideo();
         }
 
         public void renderimgfunction()
         {
-            renderinfo.Text = "Trwa renderowanie... Aplikacja może być chwilowo nieresponsywna";
+            renderinfo.Text = "🕛";
             renderinfo.Visible = true;
             changedimcheck.Checked = true;
             updatedimensions();
             bitmapn++;
             Process processimg = new Process();
+            string argumentycmd = "/C ffmpeg -y " + nvaccel + " -hide_banner -ss " + recduration.Text + " -i " + '"' + plikzrodlowy + '"' + " -map 0:v:0 -q:v 8 -frames:v 1 " + videodimensions + " .\\tempdir\\previewimg" + bitmapn + ".jpg";
             if (wyświetlIWstrzymajOknoWierszaPoleceńToolStripMenuItem.Checked == false)
             {
                 ProcessStartInfo startInfoImg = new ProcessStartInfo
                 {
                     WindowStyle = ProcessWindowStyle.Hidden,
                     FileName = "cmd.exe",
-                    Arguments = "/C ffmpeg -y " + nvaccel + " -hide_banner -ss " + recduration.Text + " -i " + '"' + plikzrodlowy + '"' + " -map 0:v:0 -q:v " + imgrenderjakosc + " -frames:v 1 " + videodimensions + " .\\tempdir\\previewimg" + bitmapn + ".jpg"
+                    Arguments = argumentycmd
                 };
                 processimg.StartInfo = startInfoImg;
                 processimg.Start();
@@ -1218,7 +1273,7 @@ namespace Clenc
                 {
                     WindowStyle = ProcessWindowStyle.Minimized,
                     FileName = "cmd.exe",
-                    Arguments = "/C ffmpeg -y " + nvaccel + " -hide_banner -ss " + recduration.Text + " -i " + '"' + plikzrodlowy + '"' + " -map 0:v:0 -q:v " + imgrenderjakosc + " -frames:v 1 " + videodimensions + " .\\tempdir\\previewimg" + bitmapn + ".jpg & pause"
+                    Arguments = argumentycmd + " & pause"
                 };
                 processimg.StartInfo = startInfoImg;
                 processimg.Start();
@@ -1250,7 +1305,7 @@ namespace Clenc
             {
                 videodimensions = "";
                 usersettings.Enabled = true;
-                GenerowanieCMD();
+                GenerowanieCMDVideo();
             }
             else
             {
@@ -1259,54 +1314,12 @@ namespace Clenc
             }
         }
 
-        public void SprawdzProporcje()
-        {
-            resolutioninfo.Text = resolutionwysokoscbox.Text + "p";
-        }
-
         private void resolutionszerokoscbox_TextChanged(object sender, EventArgs e)
         {
-            SprawdzProporcje();
+            resolutioninfo.Text = resolutionwysokoscbox.Text + "p";
             if (autopreviewrendering.Checked == true)
             {
                 renderimgfunction();
-            }
-        }
-
-        private void punktszerokoscibox_TextChanged(object sender, EventArgs e)
-        {
-            if (autopreviewrendering.Checked == true)
-            {
-                renderimgfunction();
-            }
-        }
-
-        private void hdrendercheck_CheckedChanged(object sender, EventArgs e)
-        {
-            if (hdrendercheck.Checked == false)
-            {
-                imgrenderjakosc = 8;
-            }
-            else
-            {
-                imgrenderjakosc = 1;
-            }
-        }
-
-        private void surroundsoundcheck_CheckedChanged(object sender, EventArgs e)
-        {
-            if (surroundsoundcheck.Checked == true)
-            {
-                kanalyaudio = 6;
-                audiozapassuwak.Value = 150;
-                optimizebits.Checked = false;
-                optimizebits.Enabled = false;
-            }
-            else
-            {
-                kanalyaudio = 2;
-                audiozapassuwak.Value = 48;
-                optimizebits.Enabled = true;
             }
         }
 
@@ -1334,12 +1347,7 @@ namespace Clenc
             {
                 voipoptimizationcmd = "";
             }
-            GenerowanieCMD();
-        }
-
-        private void autorinfo_Click_4(object sender, EventArgs e)
-        {
-            MessageBox.Show("Aby wybrać wyświetlaną nazwę na stałe, zmień tekst z pliku AUTOR.TXT.", "Jak zmienić nazwę?", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            GenerowanieCMDAudio();
         }
 
         private void nvidiaaccelcheck_CheckedChanged(object sender, EventArgs e)
@@ -1347,12 +1355,21 @@ namespace Clenc
             if (nvidiaaccelcheck.Checked == true)
             {
                 nvaccel = "";
+                hwaccelmodel.Visible = false;
             }
             else
             {
-                nvaccel = "-hwaccel nvdec";
+                hwaccelmodel.Visible = true;
+                if (hwaccelmodel.Text == "NVDEC")
+                {
+                    nvaccel = "-hwaccel nvdec";
+                }
+                else
+                {
+                    nvaccel = "-hwaccel dxva2";
+                }
             }
-            GenerowanieCMD();
+            GenerowanieCMDVideo();
         }
 
         private void fps29_CheckedChanged(object sender, EventArgs e)
@@ -1361,11 +1378,7 @@ namespace Clenc
             {
                 fpschange = " -r ntsc";
             }
-            else
-            {
-                fpschange = "";
-            }
-            GenerowanieCMD();
+            GenerowanieCMDVideo();
         }
 
         private void ARNRcheck_CheckedChanged(object sender, EventArgs e)
@@ -1378,7 +1391,7 @@ namespace Clenc
             {
                 arnrplus = " -arnr_max_frames 15 -arnr_strength 6 -arnr_type 3";
             }
-            GenerowanieCMD();
+            GenerowanieCMDVideo();
         }
 
         private void killprocess_Click(object sender, EventArgs e)
@@ -1389,9 +1402,10 @@ namespace Clenc
             {
                 process.Kill();
             }
-            encprogressbarPoz1.Value = 0;
-            procentstatusPoz1.Text = "Błąd";
+            encprogressbar.Value = 0;
+            procentstatus.Text = "Błąd";
             status.Text = "Renderowanie przerwane";
+            renderTab.Text = "🔄 Renderowanie";
             tabControl1.SelectTab("tabPage4");
             AktywujForms();
         }
@@ -1406,6 +1420,81 @@ namespace Clenc
             {
                 pauzaNaKońcuEnkodowaniadebugToolStripMenuItem.Enabled = true;
             }
+        }
+
+        private void hwaccelmodel_Click(object sender, EventArgs e)
+        {
+            if (nvaccel == "-hwaccel nvdec")
+            {
+                nvaccel = "-hwaccel dxva2";
+                hwaccelmodel.Text = "DXVA2";
+            }
+            else
+            {
+                nvaccel = "-hwaccel nvdec";
+                hwaccelmodel.Text = "NVDEC";
+            }
+            GenerowanieCMDVideo();
+        }
+
+        private void fps60_CheckedChanged(object sender, EventArgs e)
+        {
+            if (fps60.Checked == true)
+            {
+                fpschange = " -r 60";
+            }
+            GenerowanieCMDVideo();
+        }
+
+        private void fps50_CheckedChanged(object sender, EventArgs e)
+        {
+            if (fps50.Checked == true)
+            {
+                fpschange = " -r 50";
+            }
+            GenerowanieCMDVideo();
+        }
+
+        private void fps48_CheckedChanged(object sender, EventArgs e)
+        {
+            if (fps48.Checked == true)
+            {
+                fpschange = " -r 48";
+            }
+            GenerowanieCMDVideo();
+        }
+
+        private void fpsPAL_CheckedChanged(object sender, EventArgs e)
+        {
+            if (fpsPAL.Checked == true)
+            {
+                fpschange = " -r pal";
+            }
+            GenerowanieCMDVideo();
+        }
+
+        private void removemeta_CheckedChanged(object sender, EventArgs e)
+        {
+            if (removemeta.Checked)
+            {
+                removemetacmd = " -map_metadata -1";
+            }
+            else
+            {
+                removemetacmd = "";
+            }
+            GenerowanieCMDVideo();
+            GenerowanieCMDAudio();
+        }
+
+        private void advancedstarttime_TextChanged(object sender, EventArgs e)
+        {
+            GenerowanieCMDVideo();
+        }
+
+        private void advancedendtime_TextChanged(object sender, EventArgs e)
+        {
+            GenerowanieCMDVideo();
         }
     }
 }

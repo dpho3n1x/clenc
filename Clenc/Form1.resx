@@ -139,7 +139,7 @@
     <value>NoControl</value>
   </data>
   <data name="label29.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 237</value>
+    <value>10, 212</value>
   </data>
   <data name="label29.Size" type="System.Drawing.Size, System.Drawing">
     <value>14, 16</value>
@@ -202,16 +202,16 @@
     <value>NoControl</value>
   </data>
   <data name="label26.Location" type="System.Drawing.Point, System.Drawing">
-    <value>350, 237</value>
+    <value>390, 212</value>
   </data>
   <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 16</value>
+    <value>26, 16</value>
   </data>
   <data name="label26.TabIndex" type="System.Int32, mscorlib">
     <value>48</value>
   </data>
   <data name="label26.Text" xml:space="preserve">
-    <value>160kb/s</value>
+    <value>160</value>
   </data>
   <data name="&gt;&gt;label26.Name" xml:space="preserve">
     <value>label26</value>
@@ -238,7 +238,7 @@
     <value>6, 5</value>
   </data>
   <data name="textZaawWideo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>350, 23</value>
+    <value>349, 23</value>
   </data>
   <data name="textZaawWideo.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -258,9 +258,6 @@
   <data name="&gt;&gt;textZaawWideo.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <metadata name="featuresenabledtooltip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>379, 41</value>
-  </metadata>
   <data name="audiofadecheck.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -282,6 +279,9 @@
   <data name="audiofadecheck.Text" xml:space="preserve">
     <value>Zanikanie dźwięku</value>
   </data>
+  <metadata name="featuresenabledtooltip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>379, 41</value>
+  </metadata>
   <data name="audiofadecheck.ToolTip" xml:space="preserve">
     <value>Dodaj do nagrania efekt zanikania dźwięku na początku i końcu nagrania.
 
@@ -378,7 +378,7 @@ Efekt wyłączony przy łączeniu ścieżek.</value>
     <value>9, 94</value>
   </data>
   <data name="label32.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 22</value>
+    <value>247, 22</value>
   </data>
   <data name="label32.TabIndex" type="System.Int32, mscorlib">
     <value>36</value>
@@ -500,7 +500,7 @@ Większy zapas = Wyższa jakość dźwięku, niższa jakość obrazu</value>
     <value>9, 188</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 22</value>
+    <value>204, 22</value>
   </data>
   <data name="label7.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
@@ -559,8 +559,204 @@ Większy zapas = Wyższa jakość dźwięku, niższa jakość obrazu</value>
   <data name="&gt;&gt;PodwojnyPanel.Panel1.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="advancedendtime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>333, 240</value>
+  </data>
+  <data name="advancedendtime.MaxLength" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="advancedendtime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="advancedendtime.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="advancedendtime.Text" xml:space="preserve">
+    <value>.000</value>
+  </data>
+  <data name="advancedendtime.ToolTip" xml:space="preserve">
+    <value>Wpisz wartość w milisekundach: np.: .526.
+
+Czas zakończenia nagrania będzie wtedy wyglądał: hh:mm:ss.526
+Wpisanie liter spowoduje błąd przetwarzania.</value>
+  </data>
+  <data name="&gt;&gt;advancedendtime.Name" xml:space="preserve">
+    <value>advancedendtime</value>
+  </data>
+  <data name="&gt;&gt;advancedendtime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;advancedendtime.Parent" xml:space="preserve">
+    <value>PodwojnyPanel.Panel2</value>
+  </data>
+  <data name="&gt;&gt;advancedendtime.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label15.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>277, 243</value>
+  </data>
+  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 16</value>
+  </data>
+  <data name="label15.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="label15.Text" xml:space="preserve">
+    <value>i końca:</value>
+  </data>
+  <data name="&gt;&gt;label15.Name" xml:space="preserve">
+    <value>label15</value>
+  </data>
+  <data name="&gt;&gt;label15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label15.Parent" xml:space="preserve">
+    <value>PodwojnyPanel.Panel2</value>
+  </data>
+  <data name="&gt;&gt;label15.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="advancedstarttime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>171, 240</value>
+  </data>
+  <data name="advancedstarttime.MaxLength" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="advancedstarttime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="advancedstarttime.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="advancedstarttime.Text" xml:space="preserve">
+    <value>.000</value>
+  </data>
+  <data name="advancedstarttime.ToolTip" xml:space="preserve">
+    <value>Wpisz wartość w milisekundach: np.: .526.
+
+Czas rozpoczęcia nagrania będzie wtedy wyglądał: hh:mm:ss.526
+Wpisanie liter spowoduje błąd przetwarzania.</value>
+  </data>
+  <data name="&gt;&gt;advancedstarttime.Name" xml:space="preserve">
+    <value>advancedstarttime</value>
+  </data>
+  <data name="&gt;&gt;advancedstarttime.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;advancedstarttime.Parent" xml:space="preserve">
+    <value>PodwojnyPanel.Panel2</value>
+  </data>
+  <data name="&gt;&gt;advancedstarttime.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 243</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 16</value>
+  </data>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Zaawansowany czas startu:</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>PodwojnyPanel.Panel2</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="removemeta.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="removemeta.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9pt</value>
+  </data>
+  <data name="removemeta.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="removemeta.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 219</value>
+  </data>
+  <data name="removemeta.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 21</value>
+  </data>
+  <data name="removemeta.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="removemeta.Text" xml:space="preserve">
+    <value>Usuń inne metadane</value>
+  </data>
+  <data name="removemeta.ToolTip" xml:space="preserve">
+    <value>Usuń wszystkie metadane oprócz podanych w polu Metadane</value>
+  </data>
+  <data name="&gt;&gt;removemeta.Name" xml:space="preserve">
+    <value>removemeta</value>
+  </data>
+  <data name="&gt;&gt;removemeta.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;removemeta.Parent" xml:space="preserve">
+    <value>PodwojnyPanel.Panel2</value>
+  </data>
+  <data name="&gt;&gt;removemeta.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="hwaccelmodel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="hwaccelmodel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>239, 191</value>
+  </data>
+  <data name="hwaccelmodel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 23</value>
+  </data>
+  <data name="hwaccelmodel.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="hwaccelmodel.Text" xml:space="preserve">
+    <value>DXVA</value>
+  </data>
+  <data name="hwaccelmodel.ToolTip" xml:space="preserve">
+    <value>Jeżeli akceleracja dekodowanie NIE jest wyłączona, możesz wybrać jaki sposób akceleracji ma być włączony:
+Napis na przycisku wskazuje aktualne ustawienie:
+
+[NVDEC] - Używa akceleracji dla kart graficznych Nvidii
+[DXVA2] - Używa akceleracji dla wszystkich kart graficznych</value>
+  </data>
+  <data name="&gt;&gt;hwaccelmodel.Name" xml:space="preserve">
+    <value>hwaccelmodel</value>
+  </data>
+  <data name="&gt;&gt;hwaccelmodel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;hwaccelmodel.Parent" xml:space="preserve">
+    <value>PodwojnyPanel.Panel2</value>
+  </data>
+  <data name="&gt;&gt;hwaccelmodel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
   <data name="optimizebits.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="optimizebits.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="optimizebits.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9pt</value>
@@ -569,7 +765,7 @@ Większy zapas = Wyższa jakość dźwięku, niższa jakość obrazu</value>
     <value>NoControl</value>
   </data>
   <data name="optimizebits.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 192</value>
+    <value>8, 165</value>
   </data>
   <data name="optimizebits.Size" type="System.Drawing.Size, System.Drawing">
     <value>213, 21</value>
@@ -581,8 +777,8 @@ Większy zapas = Wyższa jakość dźwięku, niższa jakość obrazu</value>
     <value>Wymuś optymalizację wielkości</value>
   </data>
   <data name="optimizebits.ToolTip" xml:space="preserve">
-    <value>Wymuszenie optymalizacji wielkości polega na powtórzeniu renderowania jeżeli nagranie będzie zajmowało mniej niż oczekiwana wartość.
-Włączenie tej funkcji może skutkować powtórzeniem procesu renderowania.
+    <value>Wymuszenie optymalizacji wielkości polega na powtórzeniu renderowania jeżeli nagranie będzie zajmowało mniej niż oczekiwana wielkość.
+Włączenie tej funkcji może skutkować powtórzeniem procesu renderowania. Jeżeli dźwięk będzie miał przepływność większą niż 144kb/s, renderowanie zostanie powtórzone.
 
 Zaznacz jeżeli zależy Ci na jakości, a nie na czasie.</value>
   </data>
@@ -596,7 +792,7 @@ Zaznacz jeżeli zależy Ci na jakości, a nie na czasie.</value>
     <value>PodwojnyPanel.Panel2</value>
   </data>
   <data name="&gt;&gt;optimizebits.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>6</value>
   </data>
   <data name="ARNRcheck.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -608,7 +804,7 @@ Zaznacz jeżeli zależy Ci na jakości, a nie na czasie.</value>
     <value>NoControl</value>
   </data>
   <data name="ARNRcheck.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 165</value>
+    <value>8, 138</value>
   </data>
   <data name="ARNRcheck.Size" type="System.Drawing.Size, System.Drawing">
     <value>239, 21</value>
@@ -632,7 +828,7 @@ Zaznacz jeżeli zależy Ci na jakości, a nie na czasie.</value>
     <value>PodwojnyPanel.Panel2</value>
   </data>
   <data name="&gt;&gt;ARNRcheck.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>7</value>
   </data>
   <data name="label13.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -665,7 +861,7 @@ Zaznacz jeżeli zależy Ci na jakości, a nie na czasie.</value>
     <value>PodwojnyPanel.Panel2</value>
   </data>
   <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>8</value>
   </data>
   <data name="lpmodecheck.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -705,7 +901,7 @@ Pozostaw włączone jeżeli:
     <value>PodwojnyPanel.Panel2</value>
   </data>
   <data name="&gt;&gt;lpmodecheck.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>9</value>
   </data>
   <data name="nvidiaaccelcheck.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -717,7 +913,7 @@ Pozostaw włączone jeżeli:
     <value>NoControl</value>
   </data>
   <data name="nvidiaaccelcheck.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 138</value>
+    <value>8, 192</value>
   </data>
   <data name="nvidiaaccelcheck.Size" type="System.Drawing.Size, System.Drawing">
     <value>231, 21</value>
@@ -729,11 +925,9 @@ Pozostaw włączone jeżeli:
     <value>Wyłącz akcelerację dekodowania</value>
   </data>
   <data name="nvidiaaccelcheck.ToolTip" xml:space="preserve">
-    <value>Wspomaganie renderowania dzięki karcie graficznej firmy Nvidia.
+    <value>Wspomaganie renderowania dzięki karcie graficznej.
 
-Zaznacz to ustawienie jeżeli:
--nie posiadasz karty graficznej Nvidii
--masz problemy z działaniem gier (mało pamięci, przycięcia)</value>
+Zaznacz to ustawienie jeżeli masz problemy z działaniem gier (mało pamięci, przycięcia).</value>
   </data>
   <data name="&gt;&gt;nvidiaaccelcheck.Name" xml:space="preserve">
     <value>nvidiaaccelcheck</value>
@@ -745,7 +939,7 @@ Zaznacz to ustawienie jeżeli:
     <value>PodwojnyPanel.Panel2</value>
   </data>
   <data name="&gt;&gt;nvidiaaccelcheck.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>10</value>
   </data>
   <data name="usersettings.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -783,7 +977,7 @@ Ustawienia filtrów możesz łączyć używając przecinka ","</value>
     <value>PodwojnyPanel.Panel2</value>
   </data>
   <data name="&gt;&gt;usersettings.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>11</value>
   </data>
   <data name="usercommandchange.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -797,17 +991,32 @@ Ustawienia filtrów możesz łączyć używając przecinka ","</value>
   <data name="usercommandchange.AutoCompleteCustomSource2" xml:space="preserve">
     <value>-r 60</value>
   </data>
+  <data name="usercommandchange.AutoCompleteCustomSource3" xml:space="preserve">
+    <value>-pix_fmt yuv420p</value>
+  </data>
+  <data name="usercommandchange.AutoCompleteCustomSource4" xml:space="preserve">
+    <value>-vf scale=-2:1080 -sws_flags lanczos</value>
+  </data>
+  <data name="usercommandchange.AutoCompleteCustomSource5" xml:space="preserve">
+    <value>-vf minterpolate=fps=60:mi_mode=blend</value>
+  </data>
+  <data name="usercommandchange.AutoCompleteCustomSource6" xml:space="preserve">
+    <value>-vf minterpolate=fps=60:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1:me=fss</value>
+  </data>
+  <data name="usercommandchange.AutoCompleteCustomSource7" xml:space="preserve">
+    <value>-vf scale=-2:1080,minterpolate=fps=60:mi_mode=blend -sws_flags lanczos</value>
+  </data>
+  <data name="usercommandchange.AutoCompleteCustomSource8" xml:space="preserve">
+    <value>-vf scale=-2:1080,minterpolate=fps=60:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:me=fss:vsbmc=1 -sws_flags lanczos</value>
+  </data>
   <data name="usercommandchange.Location" type="System.Drawing.Point, System.Drawing">
     <value>239, 56</value>
   </data>
   <data name="usercommandchange.Size" type="System.Drawing.Size, System.Drawing">
-    <value>370, 21</value>
+    <value>351, 21</value>
   </data>
   <data name="usercommandchange.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
-  </data>
-  <data name="usercommandchange.Text" xml:space="preserve">
-    <value>-vf</value>
   </data>
   <data name="usercommandchange.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -822,7 +1031,7 @@ Ustawienia filtrów możesz łączyć używając przecinka ","</value>
     <value>PodwojnyPanel.Panel2</value>
   </data>
   <data name="&gt;&gt;usercommandchange.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>12</value>
   </data>
   <data name="av1check.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -860,7 +1069,7 @@ Dużo wolniejszy niż domyślny kodek.</value>
     <value>PodwojnyPanel.Panel2</value>
   </data>
   <data name="&gt;&gt;av1check.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>13</value>
   </data>
   <data name="fpscheck.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -899,91 +1108,139 @@ Zalecana jest wartość podzielna przez nagranie źrodłowe:
     <value>PodwojnyPanel.Panel2</value>
   </data>
   <data name="&gt;&gt;fpscheck.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>14</value>
   </data>
-  <data name="&gt;&gt;fps29.Name" xml:space="preserve">
-    <value>fps29</value>
+  <data name="fpsPAL.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;fps29.Type" xml:space="preserve">
+  <data name="fpsPAL.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9pt</value>
+  </data>
+  <data name="fpsPAL.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="fpsPAL.Location" type="System.Drawing.Point, System.Drawing">
+    <value>300, 0</value>
+  </data>
+  <data name="fpsPAL.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 21</value>
+  </data>
+  <data name="fpsPAL.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="fpsPAL.Text" xml:space="preserve">
+    <value>25 (PAL)</value>
+  </data>
+  <data name="&gt;&gt;fpsPAL.Name" xml:space="preserve">
+    <value>fpsPAL</value>
+  </data>
+  <data name="&gt;&gt;fpsPAL.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;fps29.Parent" xml:space="preserve">
+  <data name="&gt;&gt;fpsPAL.Parent" xml:space="preserve">
     <value>panelfps</value>
   </data>
-  <data name="&gt;&gt;fps29.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;fpsPAL.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;fps30.Name" xml:space="preserve">
-    <value>fps30</value>
+  <data name="fps48.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;fps30.Type" xml:space="preserve">
+  <data name="fps48.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9pt</value>
+  </data>
+  <data name="fps48.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="fps48.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 0</value>
+  </data>
+  <data name="fps48.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 21</value>
+  </data>
+  <data name="fps48.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="fps48.Text" xml:space="preserve">
+    <value>48</value>
+  </data>
+  <data name="&gt;&gt;fps48.Name" xml:space="preserve">
+    <value>fps48</value>
+  </data>
+  <data name="&gt;&gt;fps48.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;fps30.Parent" xml:space="preserve">
+  <data name="&gt;&gt;fps48.Parent" xml:space="preserve">
     <value>panelfps</value>
   </data>
-  <data name="&gt;&gt;fps30.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;fps48.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="panelfps.Location" type="System.Drawing.Point, System.Drawing">
-    <value>212, 83</value>
+  <data name="fps50.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="panelfps.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 22</value>
+  <data name="fps50.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9pt</value>
   </data>
-  <data name="panelfps.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
+  <data name="fps50.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="panelfps.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="fps50.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 0</value>
   </data>
-  <data name="&gt;&gt;panelfps.Name" xml:space="preserve">
+  <data name="fps50.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 21</value>
+  </data>
+  <data name="fps50.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="fps50.Text" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;fps50.Name" xml:space="preserve">
+    <value>fps50</value>
+  </data>
+  <data name="&gt;&gt;fps50.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;fps50.Parent" xml:space="preserve">
     <value>panelfps</value>
   </data>
-  <data name="&gt;&gt;panelfps.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;fps50.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
-  <data name="&gt;&gt;panelfps.Parent" xml:space="preserve">
-    <value>PodwojnyPanel.Panel2</value>
+  <data name="fps60.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;panelfps.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="fps60.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9pt</value>
   </data>
-  <data name="&gt;&gt;PodwojnyPanel.Panel2.Name" xml:space="preserve">
-    <value>PodwojnyPanel.Panel2</value>
+  <data name="fps60.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;PodwojnyPanel.Panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="fps60.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 0</value>
   </data>
-  <data name="&gt;&gt;PodwojnyPanel.Panel2.Parent" xml:space="preserve">
-    <value>PodwojnyPanel</value>
+  <data name="fps60.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 21</value>
   </data>
-  <data name="&gt;&gt;PodwojnyPanel.Panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="fps60.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
   </data>
-  <data name="PodwojnyPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>994, 265</value>
+  <data name="fps60.Text" xml:space="preserve">
+    <value>60</value>
   </data>
-  <data name="PodwojnyPanel.SplitterDistance" type="System.Int32, mscorlib">
-    <value>421</value>
+  <data name="&gt;&gt;fps60.Name" xml:space="preserve">
+    <value>fps60</value>
   </data>
-  <data name="PodwojnyPanel.SplitterWidth" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="&gt;&gt;fps60.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="PodwojnyPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>46</value>
+  <data name="&gt;&gt;fps60.Parent" xml:space="preserve">
+    <value>panelfps</value>
   </data>
-  <data name="&gt;&gt;PodwojnyPanel.Name" xml:space="preserve">
-    <value>PodwojnyPanel</value>
-  </data>
-  <data name="&gt;&gt;PodwojnyPanel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PodwojnyPanel.Parent" xml:space="preserve">
-    <value>tabPage5</value>
-  </data>
-  <data name="&gt;&gt;PodwojnyPanel.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;fps60.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="fps29.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -995,16 +1252,16 @@ Zalecana jest wartość podzielna przez nagranie źrodłowe:
     <value>NoControl</value>
   </data>
   <data name="fps29.Location" type="System.Drawing.Point, System.Drawing">
-    <value>55, 0</value>
+    <value>195, 0</value>
   </data>
   <data name="fps29.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 21</value>
+    <value>99, 21</value>
   </data>
   <data name="fps29.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
   </data>
   <data name="fps29.Text" xml:space="preserve">
-    <value>29.97</value>
+    <value>29.97 (NTSC)</value>
   </data>
   <data name="&gt;&gt;fps29.Name" xml:space="preserve">
     <value>fps29</value>
@@ -1016,7 +1273,7 @@ Zalecana jest wartość podzielna przez nagranie źrodłowe:
     <value>panelfps</value>
   </data>
   <data name="&gt;&gt;fps29.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="fps30.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1028,7 +1285,7 @@ Zalecana jest wartość podzielna przez nagranie źrodłowe:
     <value>NoControl</value>
   </data>
   <data name="fps30.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 0</value>
+    <value>149, 0</value>
   </data>
   <data name="fps30.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 21</value>
@@ -1049,6 +1306,66 @@ Zalecana jest wartość podzielna przez nagranie źrodłowe:
     <value>panelfps</value>
   </data>
   <data name="&gt;&gt;fps30.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="panelfps.Location" type="System.Drawing.Point, System.Drawing">
+    <value>212, 83</value>
+  </data>
+  <data name="panelfps.Size" type="System.Drawing.Size, System.Drawing">
+    <value>375, 22</value>
+  </data>
+  <data name="panelfps.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="panelfps.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;panelfps.Name" xml:space="preserve">
+    <value>panelfps</value>
+  </data>
+  <data name="&gt;&gt;panelfps.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panelfps.Parent" xml:space="preserve">
+    <value>PodwojnyPanel.Panel2</value>
+  </data>
+  <data name="&gt;&gt;panelfps.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;PodwojnyPanel.Panel2.Name" xml:space="preserve">
+    <value>PodwojnyPanel.Panel2</value>
+  </data>
+  <data name="&gt;&gt;PodwojnyPanel.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PodwojnyPanel.Panel2.Parent" xml:space="preserve">
+    <value>PodwojnyPanel</value>
+  </data>
+  <data name="&gt;&gt;PodwojnyPanel.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="PodwojnyPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1017, 270</value>
+  </data>
+  <data name="PodwojnyPanel.SplitterDistance" type="System.Int32, mscorlib">
+    <value>421</value>
+  </data>
+  <data name="PodwojnyPanel.SplitterWidth" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="PodwojnyPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="&gt;&gt;PodwojnyPanel.Name" xml:space="preserve">
+    <value>PodwojnyPanel</value>
+  </data>
+  <data name="&gt;&gt;PodwojnyPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PodwojnyPanel.Parent" xml:space="preserve">
+    <value>tabPage5</value>
+  </data>
+  <data name="&gt;&gt;PodwojnyPanel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -1079,13 +1396,13 @@ Zalecana jest wartość podzielna przez nagranie źrodłowe:
     <value>NoControl</value>
   </data>
   <data name="infolabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 638</value>
+    <value>3, 550</value>
   </data>
   <data name="infolabel.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 5, 0, 5</value>
   </data>
   <data name="infolabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>994, 41</value>
+    <value>1017, 41</value>
   </data>
   <data name="infolabel.TabIndex" type="System.Int32, mscorlib">
     <value>47</value>
@@ -1119,7 +1436,7 @@ Cała dokumentacja znajduje się na stronie: https://github.com/dpho3n1x/clenc</
     <value>NoControl</value>
   </data>
   <data name="fullctrl.Location" type="System.Drawing.Point, System.Drawing">
-    <value>165, 314</value>
+    <value>172, 313</value>
   </data>
   <data name="fullctrl.Size" type="System.Drawing.Size, System.Drawing">
     <value>130, 21</value>
@@ -1158,7 +1475,7 @@ Cała dokumentacja znajduje się na stronie: https://github.com/dpho3n1x/clenc</
     <value>NoControl</value>
   </data>
   <data name="dropmetadata.Location" type="System.Drawing.Point, System.Drawing">
-    <value>868, 517</value>
+    <value>898, 516</value>
   </data>
   <data name="dropmetadata.Size" type="System.Drawing.Size, System.Drawing">
     <value>122, 25</value>
@@ -1196,16 +1513,17 @@ Opcja ta usunie informacje takie jak: autor nagrania i wersja aplikacji Clenc.</
     <value>Consolas, 9.75pt</value>
   </data>
   <data name="liniakomendmeta.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 518</value>
+    <value>13, 517</value>
   </data>
   <data name="liniakomendmeta.Size" type="System.Drawing.Size, System.Drawing">
-    <value>856, 23</value>
+    <value>879, 23</value>
   </data>
   <data name="liniakomendmeta.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
-  <data name="liniakomendmeta.Text" xml:space="preserve">
-    <value>Komenda zostanie utworzona po przejściu ustawień podstawowych</value>
+  <data name="liniakomendmeta.ToolTip" xml:space="preserve">
+    <value>⚠ UWAGA! ⚠
+Zbyt wiele metadanych może spowodować nieoczekiwane powiększenie się pliku, przez co może zajmować minimalnie więcej miejsca niż zaplanowany limit.</value>
   </data>
   <data name="&gt;&gt;liniakomendmeta.Name" xml:space="preserve">
     <value>liniakomendmeta</value>
@@ -1226,10 +1544,10 @@ Opcja ta usunie informacje takie jak: autor nagrania i wersja aplikacji Clenc.</
     <value>Consolas, 9.75pt</value>
   </data>
   <data name="liniakomend2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 398</value>
+    <value>13, 397</value>
   </data>
   <data name="liniakomend2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>984, 23</value>
+    <value>1007, 23</value>
   </data>
   <data name="liniakomend2.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -1256,10 +1574,10 @@ Opcja ta usunie informacje takie jak: autor nagrania i wersja aplikacji Clenc.</
     <value>Consolas, 9.75pt</value>
   </data>
   <data name="liniakomendaudio.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 459</value>
+    <value>13, 458</value>
   </data>
   <data name="liniakomendaudio.Size" type="System.Drawing.Size, System.Drawing">
-    <value>984, 23</value>
+    <value>1007, 23</value>
   </data>
   <data name="liniakomendaudio.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -1286,10 +1604,10 @@ Opcja ta usunie informacje takie jak: autor nagrania i wersja aplikacji Clenc.</
     <value>Consolas, 9.75pt</value>
   </data>
   <data name="liniakomend.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 338</value>
+    <value>13, 337</value>
   </data>
   <data name="liniakomend.Size" type="System.Drawing.Size, System.Drawing">
-    <value>984, 23</value>
+    <value>1007, 23</value>
   </data>
   <data name="liniakomend.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1319,7 +1637,7 @@ Opcja ta usunie informacje takie jak: autor nagrania i wersja aplikacji Clenc.</
     <value>NoControl</value>
   </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 494</value>
+    <value>13, 493</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
     <value>95, 21</value>
@@ -1352,7 +1670,7 @@ Opcja ta usunie informacje takie jak: autor nagrania i wersja aplikacji Clenc.</
     <value>NoControl</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 283</value>
+    <value>10, 282</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>243, 23</value>
@@ -1385,7 +1703,7 @@ Opcja ta usunie informacje takie jak: autor nagrania i wersja aplikacji Clenc.</
     <value>NoControl</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 374</value>
+    <value>13, 373</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>153, 21</value>
@@ -1418,7 +1736,7 @@ Opcja ta usunie informacje takie jak: autor nagrania i wersja aplikacji Clenc.</
     <value>NoControl</value>
   </data>
   <data name="labelkomendasound.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 435</value>
+    <value>12, 434</value>
   </data>
   <data name="labelkomendasound.Size" type="System.Drawing.Size, System.Drawing">
     <value>131, 21</value>
@@ -1451,7 +1769,7 @@ Opcja ta usunie informacje takie jak: autor nagrania i wersja aplikacji Clenc.</
     <value>NoControl</value>
   </data>
   <data name="ustzaawansowanetext1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 314</value>
+    <value>13, 313</value>
   </data>
   <data name="ustzaawansowanetext1.Size" type="System.Drawing.Size, System.Drawing">
     <value>153, 21</value>
@@ -1481,13 +1799,13 @@ Opcja ta usunie informacje takie jak: autor nagrania i wersja aplikacji Clenc.</
     <value>3, 3, 3, 3</value>
   </data>
   <data name="tabPage5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1000, 682</value>
+    <value>1023, 594</value>
   </data>
   <data name="tabPage5.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
   <data name="tabPage5.Text" xml:space="preserve">
-    <value>Zaawansowane</value>
+    <value>⚙ Zaawansowane</value>
   </data>
   <data name="&gt;&gt;tabPage5.Name" xml:space="preserve">
     <value>tabPage5</value>
@@ -1504,17 +1822,182 @@ Opcja ta usunie informacje takie jak: autor nagrania i wersja aplikacji Clenc.</
   <data name="tabPage4.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;bitratelabel.Name" xml:space="preserve">
-    <value>bitratelabel</value>
+  <data name="panel2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;bitratelabel.Type" xml:space="preserve">
+  <data name="panel2.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="tytulpodsumowanie2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tytulpodsumowanie2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 11.25pt, style=Bold</value>
+  </data>
+  <data name="tytulpodsumowanie2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tytulpodsumowanie2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 10</value>
+  </data>
+  <data name="tytulpodsumowanie2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 18</value>
+  </data>
+  <data name="tytulpodsumowanie2.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="tytulpodsumowanie2.Text" xml:space="preserve">
+    <value>📏 Wielkość nagrania:</value>
+  </data>
+  <data name="&gt;&gt;tytulpodsumowanie2.Name" xml:space="preserve">
+    <value>tytulpodsumowanie2</value>
+  </data>
+  <data name="&gt;&gt;tytulpodsumowanie2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tytulpodsumowanie2.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;tytulpodsumowanie2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label14.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9pt</value>
+  </data>
+  <data name="label14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 35</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 17</value>
+  </data>
+  <data name="label14.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>Oczekiwana wielkość pliku (MB):</value>
+  </data>
+  <data name="&gt;&gt;label14.Name" xml:space="preserve">
+    <value>label14</value>
+  </data>
+  <data name="&gt;&gt;label14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="wielkosciplikubox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>214, 33</value>
+  </data>
+  <data name="wielkosciplikubox.MaxLength" type="System.Int32, mscorlib">
+    <value>327679</value>
+  </data>
+  <data name="wielkosciplikubox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 21</value>
+  </data>
+  <data name="wielkosciplikubox.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="wielkosciplikubox.Text" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="wielkosciplikubox.ToolTip" xml:space="preserve">
+    <value>Wpisz oczekiwaną wielkość nagrania.
+
+Przykładowe wielkości:
+8MB: Limit Discorda
+100MB: Limit Discorda z Nitro
+1024MB: 1GB
+650-700MB: Płyta CD
+~4200MB: Płyta DVD
+
+⚠ Jeżeli chcesz mieć pewność, że nagranie zmieści się na nośniku, wpisz wartość o 1MB mniejszą od oczekiwanej.</value>
+  </data>
+  <data name="&gt;&gt;wielkosciplikubox.Name" xml:space="preserve">
+    <value>wielkosciplikubox</value>
+  </data>
+  <data name="&gt;&gt;wielkosciplikubox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;bitratelabel.Parent" xml:space="preserve">
-    <value>panelwiecejinfo</value>
+  <data name="&gt;&gt;wielkosciplikubox.Parent" xml:space="preserve">
+    <value>panel2</value>
   </data>
-  <data name="&gt;&gt;bitratelabel.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;wielkosciplikubox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="maskerror2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="maskerror2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt, style=Bold</value>
+  </data>
+  <data name="maskerror2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="maskerror2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 62</value>
+  </data>
+  <data name="maskerror2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="maskerror2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>372, 23</value>
+  </data>
+  <data name="maskerror2.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="maskerror2.Text" xml:space="preserve">
+    <value>W tym polu powinny znajdować się tylko liczby</value>
+  </data>
+  <data name="maskerror2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;maskerror2.Name" xml:space="preserve">
+    <value>maskerror2</value>
+  </data>
+  <data name="&gt;&gt;maskerror2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;maskerror2.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;maskerror2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="bitratelabelinf.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bitratelabelinf.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt, style=Bold</value>
+  </data>
+  <data name="bitratelabelinf.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="bitratelabelinf.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 62</value>
+  </data>
+  <data name="bitratelabelinf.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="bitratelabelinf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>343, 23</value>
+  </data>
+  <data name="bitratelabelinf.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="bitratelabelinf.Text" xml:space="preserve">
+    <value>Przewidywany bitrate: 8MB / 20s = 1000kb/s</value>
+  </data>
+  <data name="bitratelabelinf.ToolTip" xml:space="preserve">
+    <value>Im wyższy bitrate tym lepiej wyższa jakość.</value>
   </data>
   <data name="&gt;&gt;bitratelabelinf.Name" xml:space="preserve">
     <value>bitratelabelinf</value>
@@ -1523,54 +2006,33 @@ Opcja ta usunie informacje takie jak: autor nagrania i wersja aplikacji Clenc.</
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;bitratelabelinf.Parent" xml:space="preserve">
-    <value>panelwiecejinfo</value>
+    <value>panel2</value>
   </data>
   <data name="&gt;&gt;bitratelabelinf.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;label9.Name" xml:space="preserve">
-    <value>label9</value>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 309</value>
   </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="panel2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 10, 7, 10</value>
   </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>panelwiecejinfo</value>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>391, 95</value>
   </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;dlugoscnagraniatext.Name" xml:space="preserve">
-    <value>dlugoscnagraniatext</value>
-  </data>
-  <data name="&gt;&gt;dlugoscnagraniatext.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dlugoscnagraniatext.Parent" xml:space="preserve">
-    <value>panelwiecejinfo</value>
-  </data>
-  <data name="&gt;&gt;dlugoscnagraniatext.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="panelwiecejinfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 365</value>
-  </data>
-  <data name="panelwiecejinfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>363, 61</value>
-  </data>
-  <data name="panelwiecejinfo.TabIndex" type="System.Int32, mscorlib">
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
   </data>
-  <data name="&gt;&gt;panelwiecejinfo.Name" xml:space="preserve">
-    <value>panelwiecejinfo</value>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
   </data>
-  <data name="&gt;&gt;panelwiecejinfo.Type" xml:space="preserve">
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panelwiecejinfo.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
     <value>tabPage4</value>
   </data>
-  <data name="&gt;&gt;panelwiecejinfo.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="featureslogo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
@@ -1609,17 +2071,20 @@ Opcja ta usunie informacje takie jak: autor nagrania i wersja aplikacji Clenc.</
   <data name="wyświetlPowiadomieniePoZakończeniuProcesuToolStripMenuItem.Text" xml:space="preserve">
     <value>Wyświetl powiadomienie po zakończeniu procesu</value>
   </data>
-  <data name="niePokazujOknaWierszaPoleceńToolStripMenuItem.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="niePokazujOknaWierszaPoleceńToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>336, 22</value>
   </data>
   <data name="niePokazujOknaWierszaPoleceńToolStripMenuItem.Text" xml:space="preserve">
     <value>Nie pokazuj okna wiersza poleceń</value>
   </data>
+  <data name="zdalnyRenderToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>336, 22</value>
+  </data>
+  <data name="zdalnyRenderToolStripMenuItem.Text" xml:space="preserve">
+    <value>Zdalny Render [Etap 1]</value>
+  </data>
   <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>337, 114</value>
+    <value>337, 136</value>
   </data>
   <data name="&gt;&gt;contextMenuStrip1.Name" xml:space="preserve">
     <value>contextMenuStrip1</value>
@@ -1628,13 +2093,13 @@ Opcja ta usunie informacje takie jak: autor nagrania i wersja aplikacji Clenc.</
     <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="featureslogo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI Emoji, 15.75pt</value>
+    <value>Segoe UI Emoji, 14.25pt</value>
   </data>
   <data name="featureslogo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="featureslogo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>529, 641</value>
+    <value>552, 554</value>
   </data>
   <data name="featureslogo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -1651,9 +2116,6 @@ Opcja ta usunie informacje takie jak: autor nagrania i wersja aplikacji Clenc.</
   <data name="featureslogo.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleRight</value>
   </data>
-  <metadata name="featuresenabledtooltip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>379, 41</value>
-  </metadata>
   <data name="featureslogo.ToolTip" xml:space="preserve">
     <value>🎮 - Tryb Niskiego Priorytetu
 ↔️ - Zmiana wymiarów obrazu
@@ -1672,112 +2134,6 @@ Opcja ta usunie informacje takie jak: autor nagrania i wersja aplikacji Clenc.</
   <data name="&gt;&gt;featureslogo.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="maskerror2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="maskerror2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 9.75pt</value>
-  </data>
-  <data name="maskerror2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="maskerror2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>330, 345</value>
-  </data>
-  <data name="maskerror2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>311, 17</value>
-  </data>
-  <data name="maskerror2.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="maskerror2.Text" xml:space="preserve">
-    <value>W tym polu powinny znajdować się tylko liczby</value>
-  </data>
-  <data name="maskerror2.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;maskerror2.Name" xml:space="preserve">
-    <value>maskerror2</value>
-  </data>
-  <data name="&gt;&gt;maskerror2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;maskerror2.Parent" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;maskerror2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="wielkosciplikuboxB.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="wielkosciplikuboxB.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 12.75pt, style=Bold</value>
-  </data>
-  <data name="wielkosciplikuboxB.Location" type="System.Drawing.Point, System.Drawing">
-    <value>330, 343</value>
-  </data>
-  <data name="wielkosciplikuboxB.MaxLength" type="System.Int32, mscorlib">
-    <value>327679</value>
-  </data>
-  <data name="wielkosciplikuboxB.Size" type="System.Drawing.Size, System.Drawing">
-    <value>338, 21</value>
-  </data>
-  <data name="wielkosciplikuboxB.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="wielkosciplikuboxB.Text" xml:space="preserve">
-    <value>8388608</value>
-  </data>
-  <data name="&gt;&gt;wielkosciplikuboxB.Name" xml:space="preserve">
-    <value>wielkosciplikuboxB</value>
-  </data>
-  <data name="&gt;&gt;wielkosciplikuboxB.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;wielkosciplikuboxB.Parent" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;wielkosciplikuboxB.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="wielkosciplikubox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>228, 343</value>
-  </data>
-  <data name="wielkosciplikubox.MaxLength" type="System.Int32, mscorlib">
-    <value>327679</value>
-  </data>
-  <data name="wielkosciplikubox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 21</value>
-  </data>
-  <data name="wielkosciplikubox.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="wielkosciplikubox.Text" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="wielkosciplikubox.ToolTip" xml:space="preserve">
-    <value>Wpisz oczekiwaną wielkość nagrania.
-
-Przykładowe wielkości:
-8MB: Limit Discorda
-100MB: Limit Discorda z Nitro
-1024MB: 1GB
-650-700MB: Płyta CD
-~4200MB: Płyta DVD</value>
-  </data>
-  <data name="&gt;&gt;wielkosciplikubox.Name" xml:space="preserve">
-    <value>wielkosciplikubox</value>
-  </data>
-  <data name="&gt;&gt;wielkosciplikubox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;wielkosciplikubox.Parent" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;wielkosciplikubox.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="startenc.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
   </data>
@@ -1791,7 +2147,7 @@ Przykładowe wielkości:
     <value>NoControl</value>
   </data>
   <data name="startenc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>829, 642</value>
+    <value>852, 554</value>
   </data>
   <data name="startenc.Size" type="System.Drawing.Size, System.Drawing">
     <value>163, 32</value>
@@ -1812,541 +2168,10 @@ Przykładowe wielkości:
     <value>tabPage4</value>
   </data>
   <data name="&gt;&gt;startenc.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="label14.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label14.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 9pt</value>
-  </data>
-  <data name="label14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 345</value>
-  </data>
-  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>213, 17</value>
-  </data>
-  <data name="label14.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="label14.Text" xml:space="preserve">
-    <value>Oczekiwana wielkość pliku (MB|B):</value>
-  </data>
-  <data name="&gt;&gt;label14.Name" xml:space="preserve">
-    <value>label14</value>
-  </data>
-  <data name="&gt;&gt;label14.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label14.Parent" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;label8.Name" xml:space="preserve">
-    <value>label8</value>
-  </data>
-  <data name="&gt;&gt;label8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;spdmaxtext.Name" xml:space="preserve">
-    <value>spdmaxtext</value>
-  </data>
-  <data name="&gt;&gt;spdmaxtext.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;spdmaxtext.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;spdmaxtext.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
-  </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;encspdtrack.Name" xml:space="preserve">
-    <value>encspdtrack</value>
-  </data>
-  <data name="&gt;&gt;encspdtrack.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;encspdtrack.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;encspdtrack.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 191</value>
-  </data>
-  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>386, 95</value>
-  </data>
-  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
-    <value>panel3</value>
-  </data>
-  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="tytulpodsumowanie2.AutoSize" type="System.Boolean, mscorlib">
+  <data name="panel3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <data name="tytulpodsumowanie2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 14.25pt, style=Bold</value>
-  </data>
-  <data name="tytulpodsumowanie2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="tytulpodsumowanie2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 311</value>
-  </data>
-  <data name="tytulpodsumowanie2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>247, 23</value>
-  </data>
-  <data name="tytulpodsumowanie2.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="tytulpodsumowanie2.Text" xml:space="preserve">
-    <value>ℹ️ Informacje o nagraniu:</value>
-  </data>
-  <data name="&gt;&gt;tytulpodsumowanie2.Name" xml:space="preserve">
-    <value>tytulpodsumowanie2</value>
-  </data>
-  <data name="&gt;&gt;tytulpodsumowanie2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tytulpodsumowanie2.Parent" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;tytulpodsumowanie2.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;AudioOnlyCheck.Name" xml:space="preserve">
-    <value>AudioOnlyCheck</value>
-  </data>
-  <data name="&gt;&gt;AudioOnlyCheck.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;AudioOnlyCheck.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;AudioOnlyCheck.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;surroundsoundcheck.Name" xml:space="preserve">
-    <value>surroundsoundcheck</value>
-  </data>
-  <data name="&gt;&gt;surroundsoundcheck.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;surroundsoundcheck.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;surroundsoundcheck.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;sounddisabled.Name" xml:space="preserve">
-    <value>sounddisabled</value>
-  </data>
-  <data name="&gt;&gt;sounddisabled.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;sounddisabled.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;sounddisabled.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;radiosound1.Name" xml:space="preserve">
-    <value>radiosound1</value>
-  </data>
-  <data name="&gt;&gt;radiosound1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;radiosound1.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;radiosound1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;podsumowanieinstrSound.Name" xml:space="preserve">
-    <value>podsumowanieinstrSound</value>
-  </data>
-  <data name="&gt;&gt;podsumowanieinstrSound.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;podsumowanieinstrSound.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;podsumowanieinstrSound.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;radiosoundJ.Name" xml:space="preserve">
-    <value>radiosoundJ</value>
-  </data>
-  <data name="&gt;&gt;radiosoundJ.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;radiosoundJ.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;radiosoundJ.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;radiosound2.Name" xml:space="preserve">
-    <value>radiosound2</value>
-  </data>
-  <data name="&gt;&gt;radiosound2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;radiosound2.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;radiosound2.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;radiosoundB.Name" xml:space="preserve">
-    <value>radiosoundB</value>
-  </data>
-  <data name="&gt;&gt;radiosoundB.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;radiosoundB.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;radiosoundB.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 116</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>848, 69</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="tytulpodsumowanie.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="tytulpodsumowanie.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="tytulpodsumowanie.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 14.25pt, style=Bold</value>
-  </data>
-  <data name="tytulpodsumowanie.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="tytulpodsumowanie.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 90</value>
-  </data>
-  <data name="tytulpodsumowanie.Size" type="System.Drawing.Size, System.Drawing">
-    <value>343, 23</value>
-  </data>
-  <data name="tytulpodsumowanie.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="tytulpodsumowanie.Text" xml:space="preserve">
-    <value>🎚️ Podstawowe ustawienia nagrania</value>
-  </data>
-  <data name="&gt;&gt;tytulpodsumowanie.Name" xml:space="preserve">
-    <value>tytulpodsumowanie</value>
-  </data>
-  <data name="&gt;&gt;tytulpodsumowanie.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tytulpodsumowanie.Parent" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;tytulpodsumowanie.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="instrukcjapodsumowanie2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="instrukcjapodsumowanie2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 11.25pt</value>
-  </data>
-  <data name="instrukcjapodsumowanie2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="instrukcjapodsumowanie2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-4, 49</value>
-  </data>
-  <data name="instrukcjapodsumowanie2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1004, 20</value>
-  </data>
-  <data name="instrukcjapodsumowanie2.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="instrukcjapodsumowanie2.Text" xml:space="preserve">
-    <value>Sprawdź czy wszystko się zgadza. Jeżeli tak, kliknij przycisk "Rozpocznij Enkodowanie"</value>
-  </data>
-  <data name="instrukcjapodsumowanie2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopCenter</value>
-  </data>
-  <data name="&gt;&gt;instrukcjapodsumowanie2.Name" xml:space="preserve">
-    <value>instrukcjapodsumowanie2</value>
-  </data>
-  <data name="&gt;&gt;instrukcjapodsumowanie2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;instrukcjapodsumowanie2.Parent" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;instrukcjapodsumowanie2.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="instrukcjapodsumowanie.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="instrukcjapodsumowanie.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 14.25pt, style=Bold</value>
-  </data>
-  <data name="instrukcjapodsumowanie.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="instrukcjapodsumowanie.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="instrukcjapodsumowanie.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="instrukcjapodsumowanie.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 5, 0, 5</value>
-  </data>
-  <data name="instrukcjapodsumowanie.Size" type="System.Drawing.Size, System.Drawing">
-    <value>994, 36</value>
-  </data>
-  <data name="instrukcjapodsumowanie.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="instrukcjapodsumowanie.Text" xml:space="preserve">
-    <value>Podsumowanie</value>
-  </data>
-  <data name="instrukcjapodsumowanie.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;instrukcjapodsumowanie.Name" xml:space="preserve">
-    <value>instrukcjapodsumowanie</value>
-  </data>
-  <data name="&gt;&gt;instrukcjapodsumowanie.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;instrukcjapodsumowanie.Parent" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;instrukcjapodsumowanie.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="tabPage4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 25</value>
-  </data>
-  <data name="tabPage4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPage4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1000, 682</value>
-  </data>
-  <data name="tabPage4.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="tabPage4.Text" xml:space="preserve">
-    <value>Podsumowanie</value>
-  </data>
-  <data name="&gt;&gt;tabPage4.Name" xml:space="preserve">
-    <value>tabPage4</value>
-  </data>
-  <data name="&gt;&gt;tabPage4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage4.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;tabPage4.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="bitratelabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>212, 7</value>
-  </data>
-  <data name="bitratelabel.MaxLength" type="System.Int32, mscorlib">
-    <value>327679</value>
-  </data>
-  <data name="bitratelabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 21</value>
-  </data>
-  <data name="bitratelabel.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="bitratelabel.Text" xml:space="preserve">
-    <value>N/A</value>
-  </data>
-  <data name="&gt;&gt;bitratelabel.Name" xml:space="preserve">
-    <value>bitratelabel</value>
-  </data>
-  <data name="&gt;&gt;bitratelabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bitratelabel.Parent" xml:space="preserve">
-    <value>panelwiecejinfo</value>
-  </data>
-  <data name="&gt;&gt;bitratelabel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="bitratelabelinf.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="bitratelabelinf.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 9pt</value>
-  </data>
-  <data name="bitratelabelinf.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="bitratelabelinf.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 9</value>
-  </data>
-  <data name="bitratelabelinf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>204, 17</value>
-  </data>
-  <data name="bitratelabelinf.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="bitratelabelinf.Text" xml:space="preserve">
-    <value>Średnia przepustowość nagrania:</value>
-  </data>
-  <data name="&gt;&gt;bitratelabelinf.Name" xml:space="preserve">
-    <value>bitratelabelinf</value>
-  </data>
-  <data name="&gt;&gt;bitratelabelinf.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;bitratelabelinf.Parent" xml:space="preserve">
-    <value>panelwiecejinfo</value>
-  </data>
-  <data name="&gt;&gt;bitratelabelinf.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 9pt</value>
-  </data>
-  <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 37</value>
-  </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>190, 17</value>
-  </data>
-  <data name="label9.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>Długość przyciętego nagrania:</value>
-  </data>
-  <data name="&gt;&gt;label9.Name" xml:space="preserve">
-    <value>label9</value>
-  </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>panelwiecejinfo</value>
-  </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="dlugoscnagraniatext.Location" type="System.Drawing.Point, System.Drawing">
-    <value>198, 35</value>
-  </data>
-  <data name="dlugoscnagraniatext.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 21</value>
-  </data>
-  <data name="dlugoscnagraniatext.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="dlugoscnagraniatext.Text" xml:space="preserve">
-    <value>N/A</value>
-  </data>
-  <data name="&gt;&gt;dlugoscnagraniatext.Name" xml:space="preserve">
-    <value>dlugoscnagraniatext</value>
-  </data>
-  <data name="&gt;&gt;dlugoscnagraniatext.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dlugoscnagraniatext.Parent" xml:space="preserve">
-    <value>panelwiecejinfo</value>
-  </data>
-  <data name="&gt;&gt;dlugoscnagraniatext.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2358,7 +2183,7 @@ Przykładowe wielkości:
     <value>NoControl</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>262, 68</value>
+    <value>265, 82</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>118, 17</value>
@@ -2391,7 +2216,7 @@ Przykładowe wielkości:
     <value>NoControl</value>
   </data>
   <data name="spdmaxtext.Location" type="System.Drawing.Point, System.Drawing">
-    <value>360, 48</value>
+    <value>363, 67</value>
   </data>
   <data name="spdmaxtext.Size" type="System.Drawing.Size, System.Drawing">
     <value>15, 16</value>
@@ -2424,7 +2249,7 @@ Przykładowe wielkości:
     <value>NoControl</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 48</value>
+    <value>17, 67</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>15, 16</value>
@@ -2457,7 +2282,7 @@ Przykładowe wielkości:
     <value>NoControl</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 68</value>
+    <value>17, 82</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>101, 17</value>
@@ -2484,10 +2309,10 @@ Przykładowe wielkości:
     <value>NoControl</value>
   </data>
   <data name="encspdtrack.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 20</value>
+    <value>10, 34</value>
   </data>
   <data name="encspdtrack.Size" type="System.Drawing.Size, System.Drawing">
-    <value>380, 45</value>
+    <value>373, 45</value>
   </data>
   <data name="encspdtrack.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -2514,16 +2339,16 @@ Wyższe wartości skracają czas potrzebny na renderowanie.</value>
     <value>True</value>
   </data>
   <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 9pt</value>
+    <value>Century Gothic, 11.25pt, style=Bold</value>
   </data>
   <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 0</value>
+    <value>10, 10</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 17</value>
+    <value>177, 18</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -2543,6 +2368,36 @@ Wyższe wartości skracają czas potrzebny na renderowanie.</value>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 185</value>
+  </data>
+  <data name="panel3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 10, 7, 10</value>
+  </data>
+  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>393, 109</value>
+  </data>
+  <data name="panel3.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
+    <value>panel3</value>
+  </data>
+  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
+    <value>tabPage4</value>
+  </data>
+  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="panel1.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
   <data name="AudioOnlyCheck.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
   </data>
@@ -2556,7 +2411,7 @@ Wyższe wartości skracają czas potrzebny na renderowanie.</value>
     <value>NoControl</value>
   </data>
   <data name="AudioOnlyCheck.Location" type="System.Drawing.Point, System.Drawing">
-    <value>709, 29</value>
+    <value>146, 59</value>
   </data>
   <data name="AudioOnlyCheck.Size" type="System.Drawing.Size, System.Drawing">
     <value>89, 27</value>
@@ -2566,6 +2421,9 @@ Wyższe wartości skracają czas potrzebny na renderowanie.</value>
   </data>
   <data name="AudioOnlyCheck.Text" xml:space="preserve">
     <value>Tylko dźwięk</value>
+  </data>
+  <data name="AudioOnlyCheck.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="AudioOnlyCheck.ToolTip" xml:space="preserve">
     <value>Renderuj jedynie dźwięk, pomiń obraz.</value>
@@ -2582,45 +2440,8 @@ Wyższe wartości skracają czas potrzebny na renderowanie.</value>
   <data name="&gt;&gt;AudioOnlyCheck.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="surroundsoundcheck.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
+  <data name="sounddisabled.Appearance" type="System.Windows.Forms.Appearance, System.Windows.Forms">
     <value>Button</value>
-  </data>
-  <data name="surroundsoundcheck.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="surroundsoundcheck.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 9pt</value>
-  </data>
-  <data name="surroundsoundcheck.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="surroundsoundcheck.Location" type="System.Drawing.Point, System.Drawing">
-    <value>804, 29</value>
-  </data>
-  <data name="surroundsoundcheck.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 27</value>
-  </data>
-  <data name="surroundsoundcheck.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="surroundsoundcheck.Text" xml:space="preserve">
-    <value>5.1</value>
-  </data>
-  <data name="surroundsoundcheck.ToolTip" xml:space="preserve">
-    <value>Renderuj dźwięk wielokanałowy (5.1 Surround).
-Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).</value>
-  </data>
-  <data name="&gt;&gt;surroundsoundcheck.Name" xml:space="preserve">
-    <value>surroundsoundcheck</value>
-  </data>
-  <data name="&gt;&gt;surroundsoundcheck.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;surroundsoundcheck.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;surroundsoundcheck.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="sounddisabled.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2632,16 +2453,19 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>NoControl</value>
   </data>
   <data name="sounddisabled.Location" type="System.Drawing.Point, System.Drawing">
-    <value>592, 32</value>
+    <value>13, 59</value>
   </data>
   <data name="sounddisabled.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 21</value>
+    <value>127, 27</value>
   </data>
   <data name="sounddisabled.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
   <data name="sounddisabled.Text" xml:space="preserve">
-    <value>Wyłącz dźwięk</value>
+    <value> 🔇 Wyłącz dźwięk</value>
+  </data>
+  <data name="sounddisabled.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;sounddisabled.Name" xml:space="preserve">
     <value>sounddisabled</value>
@@ -2653,7 +2477,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;sounddisabled.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="radiosound1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2665,7 +2489,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>NoControl</value>
   </data>
   <data name="radiosound1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 32</value>
+    <value>15, 32</value>
   </data>
   <data name="radiosound1.Size" type="System.Drawing.Size, System.Drawing">
     <value>159, 21</value>
@@ -2686,28 +2510,28 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;radiosound1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="podsumowanieinstrSound.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="podsumowanieinstrSound.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 9pt</value>
+    <value>Century Gothic, 11.25pt, style=Bold</value>
   </data>
   <data name="podsumowanieinstrSound.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="podsumowanieinstrSound.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
+    <value>10, 10</value>
   </data>
   <data name="podsumowanieinstrSound.Size" type="System.Drawing.Size, System.Drawing">
-    <value>136, 17</value>
+    <value>176, 18</value>
   </data>
   <data name="podsumowanieinstrSound.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
   <data name="podsumowanieinstrSound.Text" xml:space="preserve">
-    <value>🎵 Ścieżki dźwiękowe</value>
+    <value>🎵 Ustawienie dźwięku</value>
   </data>
   <data name="&gt;&gt;podsumowanieinstrSound.Name" xml:space="preserve">
     <value>podsumowanieinstrSound</value>
@@ -2719,7 +2543,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;podsumowanieinstrSound.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="radiosoundJ.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2731,7 +2555,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>NoControl</value>
   </data>
   <data name="radiosoundJ.Location" type="System.Drawing.Point, System.Drawing">
-    <value>432, 32</value>
+    <value>444, 32</value>
   </data>
   <data name="radiosoundJ.Size" type="System.Drawing.Size, System.Drawing">
     <value>154, 21</value>
@@ -2752,7 +2576,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;radiosoundJ.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="radiosound2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2764,7 +2588,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>NoControl</value>
   </data>
   <data name="radiosound2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>164, 32</value>
+    <value>176, 32</value>
   </data>
   <data name="radiosound2.Size" type="System.Drawing.Size, System.Drawing">
     <value>145, 21</value>
@@ -2785,7 +2609,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;radiosound2.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="radiosoundB.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2797,7 +2621,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>NoControl</value>
   </data>
   <data name="radiosoundB.Location" type="System.Drawing.Point, System.Drawing">
-    <value>315, 32</value>
+    <value>327, 32</value>
   </data>
   <data name="radiosoundB.Size" type="System.Drawing.Size, System.Drawing">
     <value>111, 21</value>
@@ -2818,82 +2642,100 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;radiosoundB.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
-  <data name="&gt;&gt;label18.Name" xml:space="preserve">
-    <value>label18</value>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 68</value>
   </data>
-  <data name="&gt;&gt;label18.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="panel1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>7, 10, 7, 10</value>
   </data>
-  <data name="&gt;&gt;label18.Parent" xml:space="preserve">
-    <value>tabPage3</value>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>608, 99</value>
   </data>
-  <data name="&gt;&gt;label18.ZOrder" xml:space="preserve">
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>tabPage4</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="instrukcjapodsumowanie.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="instrukcjapodsumowanie.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 15.75pt, style=Bold</value>
+  </data>
+  <data name="instrukcjapodsumowanie.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="instrukcjapodsumowanie.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="instrukcjapodsumowanie.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="instrukcjapodsumowanie.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>5, 10, 0, 10</value>
+  </data>
+  <data name="instrukcjapodsumowanie.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1017, 51</value>
+  </data>
+  <data name="instrukcjapodsumowanie.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;saveplacetext.Name" xml:space="preserve">
-    <value>saveplacetext</value>
+  <data name="instrukcjapodsumowanie.Text" xml:space="preserve">
+    <value>📃 Finalne ustawienia</value>
   </data>
-  <data name="&gt;&gt;saveplacetext.Type" xml:space="preserve">
+  <data name="instrukcjapodsumowanie.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;instrukcjapodsumowanie.Name" xml:space="preserve">
+    <value>instrukcjapodsumowanie</value>
+  </data>
+  <data name="&gt;&gt;instrukcjapodsumowanie.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;saveplacetext.Parent" xml:space="preserve">
-    <value>tabPage3</value>
+  <data name="&gt;&gt;instrukcjapodsumowanie.Parent" xml:space="preserve">
+    <value>tabPage4</value>
   </data>
-  <data name="&gt;&gt;saveplacetext.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;instrukcjapodsumowanie.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;button1.Name" xml:space="preserve">
-    <value>button1</value>
-  </data>
-  <data name="&gt;&gt;button1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button1.Parent" xml:space="preserve">
-    <value>tabPage3</value>
-  </data>
-  <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="tabPage4.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 25</value>
   </data>
-  <data name="tabPage3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tabPage4.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1000, 682</value>
+  <data name="tabPage4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1023, 594</value>
   </data>
-  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="tabPage4.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="tabPage3.Text" xml:space="preserve">
-    <value>Lokalizacja Zapisu nagrania</value>
+  <data name="tabPage4.Text" xml:space="preserve">
+    <value>ℹ Podsumowanie</value>
   </data>
-  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
-    <value>tabPage3</value>
+  <data name="&gt;&gt;tabPage4.Name" xml:space="preserve">
+    <value>tabPage4</value>
   </data>
-  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
+  <data name="&gt;&gt;tabPage4.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tabPage4.Parent" xml:space="preserve">
     <value>tabControl1</value>
   </data>
-  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;tabPage4.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="label18.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left, Right</value>
@@ -2905,10 +2747,10 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>NoControl</value>
   </data>
   <data name="label18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 319</value>
+    <value>0, 268</value>
   </data>
   <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1000, 17</value>
+    <value>1023, 17</value>
   </data>
   <data name="label18.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -2941,10 +2783,10 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>NoControl</value>
   </data>
   <data name="saveplacetext.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 245</value>
+    <value>8, 194</value>
   </data>
   <data name="saveplacetext.Size" type="System.Drawing.Size, System.Drawing">
-    <value>984, 74</value>
+    <value>1007, 74</value>
   </data>
   <data name="saveplacetext.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2980,7 +2822,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>0, 3</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1000, 29</value>
+    <value>1023, 29</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -3016,10 +2858,10 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>NoControl</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 638</value>
+    <value>3, 550</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>994, 41</value>
+    <value>1017, 41</value>
   </data>
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -3042,41 +2884,58 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;koniectextmask.Name" xml:space="preserve">
-    <value>koniectextmask</value>
+  <data name="tabPage3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
   </data>
-  <data name="&gt;&gt;koniectextmask.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="tabPage3.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
   </data>
-  <data name="&gt;&gt;koniectextmask.Parent" xml:space="preserve">
-    <value>tabPage2</value>
+  <data name="tabPage3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1023, 594</value>
   </data>
-  <data name="&gt;&gt;koniectextmask.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;maskerror.Name" xml:space="preserve">
-    <value>maskerror</value>
-  </data>
-  <data name="&gt;&gt;maskerror.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;maskerror.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;maskerror.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;poczatektextmask.Name" xml:space="preserve">
-    <value>poczatektextmask</value>
-  </data>
-  <data name="&gt;&gt;poczatektextmask.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;poczatektextmask.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;poczatektextmask.ZOrder" xml:space="preserve">
+  <data name="tabPage3.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
+  </data>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>💾 Miejsce zapisu</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Name" xml:space="preserve">
+    <value>tabPage3</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabPage3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="wmp1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="wmp1.Enabled" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="wmp1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 33</value>
+  </data>
+  <data name="wmp1.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAtwAAAAIB
+        AAAAAQAAAAAAAAAAAAAAAKIAAAAAAwAACAAAAAAABQAAAAAAAADwPwMAAAAAAAUAAAAAAAAAAAAIAAIA
+        AAAAAAMAAQAAAAsA//8DAAAAAAALAP//CAACAAAAAAADADIAAAALAAAACAAKAAAAZgB1AGwAbAAAAAsA
+        AAALAAAACwD//wsA//8LAAAACAACAAAAAAAIAAIAAAAAAAgAAgAAAAAACAACAAAAAAALAAAA6GUAAOA8
+        AAAL
+</value>
+  </data>
+  <data name="wmp1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1007, 501</value>
+  </data>
+  <data name="wmp1.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
   <data name="&gt;&gt;wmp1.Name" xml:space="preserve">
     <value>wmp1</value>
@@ -3088,7 +2947,31 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;wmp1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>0</value>
+  </data>
+  <data name="pobinfo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
+  </data>
+  <data name="pobinfo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 12pt</value>
+  </data>
+  <data name="pobinfo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pobinfo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 288</value>
+  </data>
+  <data name="pobinfo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1006, 69</value>
+  </data>
+  <data name="pobinfo.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="pobinfo.Text" xml:space="preserve">
+    <value>Wczytywanie wybranego nagrania...</value>
+  </data>
+  <data name="pobinfo.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;pobinfo.Name" xml:space="preserve">
     <value>pobinfo</value>
@@ -3100,82 +2983,40 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;pobinfo.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;defaultplayer.Name" xml:space="preserve">
-    <value>defaultplayer</value>
-  </data>
-  <data name="&gt;&gt;defaultplayer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;defaultplayer.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;defaultplayer.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;dlugosctext.Name" xml:space="preserve">
-    <value>dlugosctext</value>
-  </data>
-  <data name="&gt;&gt;dlugosctext.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dlugosctext.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;dlugosctext.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;wyznaczkoniec.Name" xml:space="preserve">
-    <value>wyznaczkoniec</value>
-  </data>
-  <data name="&gt;&gt;wyznaczkoniec.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;wyznaczkoniec.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;wyznaczkoniec.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;ustawpoczatek.Name" xml:space="preserve">
-    <value>ustawpoczatek</value>
-  </data>
-  <data name="&gt;&gt;ustawpoczatek.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ustawpoczatek.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;ustawpoczatek.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 25</value>
-  </data>
-  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1000, 682</value>
-  </data>
-  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="tabPage2.Text" xml:space="preserve">
-    <value>Przycinanie nagrania</value>
+  <data name="pobani.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left, Right</value>
   </data>
-  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
+  <data name="pobani.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pobani.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-3, 220</value>
+  </data>
+  <data name="pobani.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>3000, 65</value>
+  </data>
+  <data name="pobani.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1030, 65</value>
+  </data>
+  <data name="pobani.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pobani.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;pobani.Name" xml:space="preserve">
+    <value>pobani</value>
+  </data>
+  <data name="&gt;&gt;pobani.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pobani.Parent" xml:space="preserve">
     <value>tabPage2</value>
   </data>
-  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;pobani.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="koniectextmask.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -3187,7 +3028,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>Century Gothic, 14.25pt, style=Bold</value>
   </data>
   <data name="koniectextmask.Location" type="System.Drawing.Point, System.Drawing">
-    <value>842, 625</value>
+    <value>867, 540</value>
   </data>
   <data name="koniectextmask.Mask" xml:space="preserve">
     <value>00:00:00</value>
@@ -3220,7 +3061,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;koniectextmask.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
   </data>
   <data name="maskerror.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3256,7 +3097,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;maskerror.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="poczatektextmask.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -3268,7 +3109,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>Century Gothic, 14.25pt, style=Bold</value>
   </data>
   <data name="poczatektextmask.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 625</value>
+    <value>8, 540</value>
   </data>
   <data name="poczatektextmask.Mask" xml:space="preserve">
     <value>00:00:00</value>
@@ -3298,81 +3139,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;poczatektextmask.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="wmp1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="wmp1.Enabled" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="wmp1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 33</value>
-  </data>
-  <data name="wmp1.OcxState" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
-        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACFTeXN0
-        ZW0uV2luZG93cy5Gb3Jtcy5BeEhvc3QrU3RhdGUBAAAABERhdGEHAgIAAAAJAwAAAA8DAAAAtwAAAAIB
-        AAAAAQAAAAAAAAAAAAAAAKIAAAAAAwAACAAAAAAABQAAAAAAAADwPwMAAAAAAAUAAAAAAAAAAAAIAAIA
-        AAAAAAMAAQAAAAsA//8DAAAAAAALAP//CAACAAAAAAADADIAAAALAAAACAAKAAAAZgB1AGwAbAAAAAsA
-        AAALAAAACwD//wsA//8LAAAACAACAAAAAAAIAAIAAAAAAAgAAgAAAAAACAACAAAAAAALAAAA6GUAAOA8
-        AAAL
-</value>
-  </data>
-  <data name="wmp1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>986, 589</value>
-  </data>
-  <data name="wmp1.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;wmp1.Name" xml:space="preserve">
-    <value>wmp1</value>
-  </data>
-  <data name="&gt;&gt;wmp1.Type" xml:space="preserve">
-    <value>AxWMPLib.AxWindowsMediaPlayer, AxInterop.WMPLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;wmp1.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;wmp1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="pobinfo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="pobinfo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 15.75pt</value>
-  </data>
-  <data name="pobinfo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="pobinfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 36</value>
-  </data>
-  <data name="pobinfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>968, 559</value>
-  </data>
-  <data name="pobinfo.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="pobinfo.Text" xml:space="preserve">
-    <value>⏳ Pobieranie informacji o nagraniu ⏳</value>
-  </data>
-  <data name="pobinfo.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;pobinfo.Name" xml:space="preserve">
-    <value>pobinfo</value>
-  </data>
-  <data name="&gt;&gt;pobinfo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pobinfo.Parent" xml:space="preserve">
-    <value>tabPage2</value>
-  </data>
-  <data name="&gt;&gt;pobinfo.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="defaultplayer.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -3387,7 +3154,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>NoControl</value>
   </data>
   <data name="defaultplayer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>768, 3</value>
+    <value>791, 3</value>
   </data>
   <data name="defaultplayer.Size" type="System.Drawing.Size, System.Drawing">
     <value>224, 27</value>
@@ -3411,7 +3178,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;defaultplayer.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="dlugosctext.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left, Right</value>
@@ -3423,13 +3190,13 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>NoControl</value>
   </data>
   <data name="dlugosctext.Location" type="System.Drawing.Point, System.Drawing">
-    <value>164, 625</value>
+    <value>166, 540</value>
   </data>
   <data name="dlugosctext.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
   <data name="dlugosctext.Size" type="System.Drawing.Size, System.Drawing">
-    <value>672, 49</value>
+    <value>695, 49</value>
   </data>
   <data name="dlugosctext.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -3450,7 +3217,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;dlugosctext.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="wyznaczkoniec.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -3465,7 +3232,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>NoControl</value>
   </data>
   <data name="wyznaczkoniec.Location" type="System.Drawing.Point, System.Drawing">
-    <value>842, 652</value>
+    <value>867, 567</value>
   </data>
   <data name="wyznaczkoniec.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 24</value>
@@ -3486,7 +3253,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;wyznaczkoniec.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="ustawpoczatek.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -3501,7 +3268,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>NoControl</value>
   </data>
   <data name="ustawpoczatek.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 652</value>
+    <value>8, 567</value>
   </data>
   <data name="ustawpoczatek.Size" type="System.Drawing.Size, System.Drawing">
     <value>146, 24</value>
@@ -3522,89 +3289,44 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>tabPage2</value>
   </data>
   <data name="&gt;&gt;ustawpoczatek.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
-  <data name="&gt;&gt;znajdznagranie.Name" xml:space="preserve">
-    <value>znajdznagranie</value>
-  </data>
-  <data name="&gt;&gt;znajdznagranie.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;znajdznagranie.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;znajdznagranie.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label17.Name" xml:space="preserve">
-    <value>label17</value>
-  </data>
-  <data name="&gt;&gt;label17.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label17.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;label17.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;adresnagrania.Name" xml:space="preserve">
-    <value>adresnagrania</value>
-  </data>
-  <data name="&gt;&gt;adresnagrania.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;adresnagrania.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;adresnagrania.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;powitanie1.Name" xml:space="preserve">
-    <value>powitanie1</value>
-  </data>
-  <data name="&gt;&gt;powitanie1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;powitanie1.Parent" xml:space="preserve">
-    <value>tabPage1</value>
-  </data>
-  <data name="&gt;&gt;powitanie1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="tabPage1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 8.25pt</value>
-  </data>
-  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="tabPage2.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 25</value>
   </data>
-  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1000, 682</value>
+  <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1023, 594</value>
   </data>
-  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="tabPage2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="tabPage1.Text" xml:space="preserve">
-    <value>Wyszukiwanie nagrania</value>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>✂ Przycinanie długości</value>
   </data>
-  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
-    <value>tabPage1</value>
+  <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
+    <value>tabPage2</value>
   </data>
-  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
+  <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;tabPage2.Parent" xml:space="preserve">
     <value>tabControl1</value>
   </data>
-  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;tabPage2.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <metadata name="wybierznagraniemenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>172, 38</value>
   </metadata>
+  <data name="nieOtwarzajNagraniaWAplikacjiToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>246, 22</value>
+  </data>
+  <data name="nieOtwarzajNagraniaWAplikacjiToolStripMenuItem.Text" xml:space="preserve">
+    <value>Nie otwarzaj nagrania w aplikacji</value>
+  </data>
   <data name="wybierznagraniemenu.Size" type="System.Drawing.Size, System.Drawing">
     <value>247, 26</value>
   </data>
@@ -3627,10 +3349,10 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>NoControl</value>
   </data>
   <data name="znajdznagranie.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 638</value>
+    <value>3, 550</value>
   </data>
   <data name="znajdznagranie.Size" type="System.Drawing.Size, System.Drawing">
-    <value>994, 41</value>
+    <value>1017, 41</value>
   </data>
   <data name="znajdznagranie.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -3650,12 +3372,6 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
   <data name="&gt;&gt;znajdznagranie.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="nieOtwarzajNagraniaWAplikacjiToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>246, 22</value>
-  </data>
-  <data name="nieOtwarzajNagraniaWAplikacjiToolStripMenuItem.Text" xml:space="preserve">
-    <value>Nie otwarzaj nagrania w aplikacji</value>
-  </data>
   <data name="label17.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left, Right</value>
   </data>
@@ -3666,7 +3382,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>NoControl</value>
   </data>
   <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-3, 324</value>
+    <value>-3, 273</value>
   </data>
   <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
     <value>1000, 17</value>
@@ -3702,7 +3418,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>NoControl</value>
   </data>
   <data name="adresnagrania.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 248</value>
+    <value>0, 197</value>
   </data>
   <data name="adresnagrania.Size" type="System.Drawing.Size, System.Drawing">
     <value>1000, 76</value>
@@ -3764,380 +3480,35 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
   <data name="&gt;&gt;powitanie1.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;resolutioninfo.Name" xml:space="preserve">
-    <value>resolutioninfo</value>
-  </data>
-  <data name="&gt;&gt;resolutioninfo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;resolutioninfo.Parent" xml:space="preserve">
-    <value>tabPage7</value>
-  </data>
-  <data name="&gt;&gt;resolutioninfo.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;renderinfo.Name" xml:space="preserve">
-    <value>renderinfo</value>
-  </data>
-  <data name="&gt;&gt;renderinfo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;renderinfo.Parent" xml:space="preserve">
-    <value>tabPage7</value>
-  </data>
-  <data name="&gt;&gt;renderinfo.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;punktwysokoscibox.Name" xml:space="preserve">
-    <value>punktwysokoscibox</value>
-  </data>
-  <data name="&gt;&gt;punktwysokoscibox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;punktwysokoscibox.Parent" xml:space="preserve">
-    <value>tabPage7</value>
-  </data>
-  <data name="&gt;&gt;punktwysokoscibox.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;punktszerokoscibox.Name" xml:space="preserve">
-    <value>punktszerokoscibox</value>
-  </data>
-  <data name="&gt;&gt;punktszerokoscibox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;punktszerokoscibox.Parent" xml:space="preserve">
-    <value>tabPage7</value>
-  </data>
-  <data name="&gt;&gt;punktszerokoscibox.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;resolutionwysokoscbox.Name" xml:space="preserve">
-    <value>resolutionwysokoscbox</value>
-  </data>
-  <data name="&gt;&gt;resolutionwysokoscbox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;resolutionwysokoscbox.Parent" xml:space="preserve">
-    <value>tabPage7</value>
-  </data>
-  <data name="&gt;&gt;resolutionwysokoscbox.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;resolutionszerokoscbox.Name" xml:space="preserve">
-    <value>resolutionszerokoscbox</value>
-  </data>
-  <data name="&gt;&gt;resolutionszerokoscbox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;resolutionszerokoscbox.Parent" xml:space="preserve">
-    <value>tabPage7</value>
-  </data>
-  <data name="&gt;&gt;resolutionszerokoscbox.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;recduration.Name" xml:space="preserve">
-    <value>recduration</value>
-  </data>
-  <data name="&gt;&gt;recduration.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;recduration.Parent" xml:space="preserve">
-    <value>tabPage7</value>
-  </data>
-  <data name="&gt;&gt;recduration.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;renderimg.Name" xml:space="preserve">
-    <value>renderimg</value>
-  </data>
-  <data name="&gt;&gt;renderimg.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;renderimg.Parent" xml:space="preserve">
-    <value>tabPage7</value>
-  </data>
-  <data name="&gt;&gt;renderimg.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;label23.Name" xml:space="preserve">
-    <value>label23</value>
-  </data>
-  <data name="&gt;&gt;label23.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label23.Parent" xml:space="preserve">
-    <value>tabPage7</value>
-  </data>
-  <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;label24.Name" xml:space="preserve">
-    <value>label24</value>
-  </data>
-  <data name="&gt;&gt;label24.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label24.Parent" xml:space="preserve">
-    <value>tabPage7</value>
-  </data>
-  <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;label25.Name" xml:space="preserve">
-    <value>label25</value>
-  </data>
-  <data name="&gt;&gt;label25.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label25.Parent" xml:space="preserve">
-    <value>tabPage7</value>
-  </data>
-  <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;changedimcheck.Name" xml:space="preserve">
-    <value>changedimcheck</value>
-  </data>
-  <data name="&gt;&gt;changedimcheck.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;changedimcheck.Parent" xml:space="preserve">
-    <value>tabPage7</value>
-  </data>
-  <data name="&gt;&gt;changedimcheck.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;label22.Name" xml:space="preserve">
-    <value>label22</value>
-  </data>
-  <data name="&gt;&gt;label22.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label22.Parent" xml:space="preserve">
-    <value>tabPage7</value>
-  </data>
-  <data name="&gt;&gt;label22.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;label21.Name" xml:space="preserve">
-    <value>label21</value>
-  </data>
-  <data name="&gt;&gt;label21.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label21.Parent" xml:space="preserve">
-    <value>tabPage7</value>
-  </data>
-  <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>tabPage7</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;dimensionsimg.Name" xml:space="preserve">
-    <value>dimensionsimg</value>
-  </data>
-  <data name="&gt;&gt;dimensionsimg.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dimensionsimg.Parent" xml:space="preserve">
-    <value>tabPage7</value>
-  </data>
-  <data name="&gt;&gt;dimensionsimg.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="tabPage7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 25</value>
-  </data>
-  <data name="tabPage7.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPage7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1000, 682</value>
-  </data>
-  <data name="tabPage7.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="tabPage7.Text" xml:space="preserve">
-    <value>Wymiary obrazu</value>
-  </data>
-  <data name="&gt;&gt;tabPage7.Name" xml:space="preserve">
-    <value>tabPage7</value>
-  </data>
-  <data name="&gt;&gt;tabPage7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage7.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;tabPage7.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="tabPage8.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="&gt;&gt;playencodedPoz1.Name" xml:space="preserve">
-    <value>playencodedPoz1</value>
-  </data>
-  <data name="&gt;&gt;playencodedPoz1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;playencodedPoz1.Parent" xml:space="preserve">
-    <value>tabPage8</value>
-  </data>
-  <data name="&gt;&gt;playencodedPoz1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;splitContainer1.Name" xml:space="preserve">
-    <value>splitContainer1</value>
-  </data>
-  <data name="&gt;&gt;splitContainer1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;splitContainer1.Parent" xml:space="preserve">
-    <value>tabPage8</value>
-  </data>
-  <data name="&gt;&gt;splitContainer1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;status.Name" xml:space="preserve">
-    <value>status</value>
-  </data>
-  <data name="&gt;&gt;status.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;status.Parent" xml:space="preserve">
-    <value>tabPage8</value>
-  </data>
-  <data name="&gt;&gt;status.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;procentstatusPoz1.Name" xml:space="preserve">
-    <value>procentstatusPoz1</value>
-  </data>
-  <data name="&gt;&gt;procentstatusPoz1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;procentstatusPoz1.Parent" xml:space="preserve">
-    <value>tabPage8</value>
-  </data>
-  <data name="&gt;&gt;procentstatusPoz1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;killprocess.Name" xml:space="preserve">
-    <value>killprocess</value>
-  </data>
-  <data name="&gt;&gt;killprocess.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;killprocess.Parent" xml:space="preserve">
-    <value>tabPage8</value>
-  </data>
-  <data name="&gt;&gt;killprocess.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;KolejkaPoz1Text.Name" xml:space="preserve">
-    <value>KolejkaPoz1Text</value>
-  </data>
-  <data name="&gt;&gt;KolejkaPoz1Text.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;KolejkaPoz1Text.Parent" xml:space="preserve">
-    <value>tabPage8</value>
-  </data>
-  <data name="&gt;&gt;KolejkaPoz1Text.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;encprogressbarPoz1.Name" xml:space="preserve">
-    <value>encprogressbarPoz1</value>
-  </data>
-  <data name="&gt;&gt;encprogressbarPoz1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;encprogressbarPoz1.Parent" xml:space="preserve">
-    <value>tabPage8</value>
-  </data>
-  <data name="&gt;&gt;encprogressbarPoz1.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;progresscircle.Name" xml:space="preserve">
-    <value>progresscircle</value>
-  </data>
-  <data name="&gt;&gt;progresscircle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;progresscircle.Parent" xml:space="preserve">
-    <value>tabPage8</value>
-  </data>
-  <data name="&gt;&gt;progresscircle.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="tabPage8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 25</value>
-  </data>
-  <data name="tabPage8.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPage8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1000, 682</value>
-  </data>
-  <data name="tabPage8.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="tabPage8.Text" xml:space="preserve">
-    <value>Renderowanie</value>
-  </data>
-  <data name="&gt;&gt;tabPage8.Name" xml:space="preserve">
-    <value>tabPage8</value>
-  </data>
-  <data name="&gt;&gt;tabPage8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabPage8.Parent" xml:space="preserve">
-    <value>tabControl1</value>
-  </data>
-  <data name="&gt;&gt;tabPage8.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="tabControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tabControl1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="tabPage1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 8.25pt</value>
   </data>
-  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="tabPage1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
   </data>
-  <data name="tabControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
+  <data name="tabPage1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
   </data>
-  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1008, 711</value>
+  <data name="tabPage1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1023, 594</value>
   </data>
-  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
+  <data name="tabPage1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>🔍 Oryginalne nagranie</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Name" xml:space="preserve">
+    <value>tabPage1</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabPage1.Parent" xml:space="preserve">
     <value>tabControl1</value>
   </data>
-  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;tabPage1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="resolutioninfo.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left, Right</value>
@@ -4149,16 +3520,16 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>NoControl</value>
   </data>
   <data name="resolutioninfo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>270, 616</value>
+    <value>268, 527</value>
   </data>
   <data name="resolutioninfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>478, 26</value>
+    <value>501, 26</value>
   </data>
   <data name="resolutioninfo.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
   </data>
   <data name="resolutioninfo.Text" xml:space="preserve">
-    <value>1080p FullHD, 16:9</value>
+    <value>1080p, 16:9</value>
   </data>
   <data name="resolutioninfo.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -4185,13 +3556,13 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>176, 7</value>
   </data>
   <data name="renderinfo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>661, 16</value>
+    <value>684, 16</value>
   </data>
   <data name="renderinfo.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
   </data>
   <data name="renderinfo.Text" xml:space="preserve">
-    <value>Trwa renderowanie... Aplikacja może być chwilowo nieresponsywna</value>
+    <value>🕛</value>
   </data>
   <data name="renderinfo.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopRight</value>
@@ -4218,7 +3589,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>Century Gothic, 12pt, style=Bold</value>
   </data>
   <data name="punktwysokoscibox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>928, 653</value>
+    <value>949, 564</value>
   </data>
   <data name="punktwysokoscibox.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 20</value>
@@ -4251,7 +3622,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>Century Gothic, 12pt, style=Bold</value>
   </data>
   <data name="punktszerokoscibox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>928, 633</value>
+    <value>949, 544</value>
   </data>
   <data name="punktszerokoscibox.Size" type="System.Drawing.Size, System.Drawing">
     <value>64, 20</value>
@@ -4284,7 +3655,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>Century Gothic, 12pt, style=Bold</value>
   </data>
   <data name="resolutionwysokoscbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>101, 654</value>
+    <value>99, 565</value>
   </data>
   <data name="resolutionwysokoscbox.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
@@ -4314,7 +3685,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>Century Gothic, 12pt, style=Bold</value>
   </data>
   <data name="resolutionszerokoscbox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>101, 633</value>
+    <value>99, 544</value>
   </data>
   <data name="resolutionszerokoscbox.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
@@ -4344,7 +3715,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>Century Gothic, 20.25pt, style=Bold</value>
   </data>
   <data name="recduration.Location" type="System.Drawing.Point, System.Drawing">
-    <value>270, 645</value>
+    <value>268, 556</value>
   </data>
   <data name="recduration.Mask" xml:space="preserve">
     <value>00:00:00</value>
@@ -4353,7 +3724,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>-</value>
   </data>
   <data name="recduration.Size" type="System.Drawing.Size, System.Drawing">
-    <value>478, 34</value>
+    <value>501, 34</value>
   </data>
   <data name="recduration.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
@@ -4385,8 +3756,20 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
   <data name="renderimgcontext.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9pt</value>
   </data>
+  <data name="wyświetlIWstrzymajOknoWierszaPoleceńToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>355, 22</value>
+  </data>
+  <data name="wyświetlIWstrzymajOknoWierszaPoleceńToolStripMenuItem.Text" xml:space="preserve">
+    <value>Wyświetl i wstrzymaj okno wiersza poleceń</value>
+  </data>
+  <data name="autopreviewrendering.Size" type="System.Drawing.Size, System.Drawing">
+    <value>355, 22</value>
+  </data>
+  <data name="autopreviewrendering.Text" xml:space="preserve">
+    <value>Renderowanie podglądu w czasie rzeczywistym</value>
+  </data>
   <data name="renderimgcontext.Size" type="System.Drawing.Size, System.Drawing">
-    <value>465, 70</value>
+    <value>356, 48</value>
   </data>
   <data name="&gt;&gt;renderimgcontext.Name" xml:space="preserve">
     <value>renderimgcontext</value>
@@ -4401,7 +3784,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>NoControl</value>
   </data>
   <data name="renderimg.Location" type="System.Drawing.Point, System.Drawing">
-    <value>843, 3</value>
+    <value>866, 3</value>
   </data>
   <data name="renderimg.Size" type="System.Drawing.Size, System.Drawing">
     <value>149, 25</value>
@@ -4424,27 +3807,6 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
   <data name="&gt;&gt;renderimg.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="wyświetlIWstrzymajOknoWierszaPoleceńToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>464, 22</value>
-  </data>
-  <data name="wyświetlIWstrzymajOknoWierszaPoleceńToolStripMenuItem.Text" xml:space="preserve">
-    <value>Wyświetl i wstrzymaj okno wiersza poleceń</value>
-  </data>
-  <data name="autopreviewrendering.Size" type="System.Drawing.Size, System.Drawing">
-    <value>464, 22</value>
-  </data>
-  <data name="autopreviewrendering.Text" xml:space="preserve">
-    <value>Renderowanie podglądu w czasie rzeczywistym</value>
-  </data>
-  <data name="hdrendercheck.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 9pt</value>
-  </data>
-  <data name="hdrendercheck.Size" type="System.Drawing.Size, System.Drawing">
-    <value>464, 22</value>
-  </data>
-  <data name="hdrendercheck.Text" xml:space="preserve">
-    <value>Renderowanie w wysokiej jakości (może spowolnić renderowanie)</value>
-  </data>
   <data name="label23.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
   </data>
@@ -4458,7 +3820,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>NoControl</value>
   </data>
   <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
-    <value>793, 653</value>
+    <value>814, 564</value>
   </data>
   <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
     <value>138, 21</value>
@@ -4494,7 +3856,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>NoControl</value>
   </data>
   <data name="label24.Location" type="System.Drawing.Point, System.Drawing">
-    <value>792, 632</value>
+    <value>813, 543</value>
   </data>
   <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
     <value>139, 21</value>
@@ -4530,10 +3892,10 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>NoControl</value>
   </data>
   <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
-    <value>793, 607</value>
+    <value>814, 518</value>
   </data>
   <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
-    <value>199, 23</value>
+    <value>201, 23</value>
   </data>
   <data name="label25.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -4596,7 +3958,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>NoControl</value>
   </data>
   <data name="label22.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 653</value>
+    <value>6, 564</value>
   </data>
   <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
     <value>87, 21</value>
@@ -4632,7 +3994,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>NoControl</value>
   </data>
   <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 632</value>
+    <value>6, 543</value>
   </data>
   <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
     <value>88, 21</value>
@@ -4668,7 +4030,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>NoControl</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 607</value>
+    <value>6, 518</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>266, 23</value>
@@ -4701,7 +4063,7 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>8, 32</value>
   </data>
   <data name="dimensionsimg.Size" type="System.Drawing.Size, System.Drawing">
-    <value>984, 569</value>
+    <value>1007, 483</value>
   </data>
   <data name="dimensionsimg.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
@@ -4721,44 +4083,35 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
   <data name="&gt;&gt;dimensionsimg.ZOrder" xml:space="preserve">
     <value>15</value>
   </data>
-  <data name="playencodedPoz1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
+  <data name="tabPage7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
   </data>
-  <data name="playencodedPoz1.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="tabPage7.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
   </data>
-  <data name="playencodedPoz1.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="tabPage7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1023, 594</value>
   </data>
-  <data name="playencodedPoz1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Century Gothic, 9.75pt</value>
+  <data name="tabPage7.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="playencodedPoz1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="tabPage7.Text" xml:space="preserve">
+    <value>↔ Wymiary obrazu</value>
   </data>
-  <data name="playencodedPoz1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>814, 644</value>
+  <data name="&gt;&gt;tabPage7.Name" xml:space="preserve">
+    <value>tabPage7</value>
   </data>
-  <data name="playencodedPoz1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 32</value>
+  <data name="&gt;&gt;tabPage7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="playencodedPoz1.TabIndex" type="System.Int32, mscorlib">
-    <value>40</value>
+  <data name="&gt;&gt;tabPage7.Parent" xml:space="preserve">
+    <value>tabControl1</value>
   </data>
-  <data name="playencodedPoz1.Text" xml:space="preserve">
-    <value>▶ Otwórz nagranie</value>
+  <data name="&gt;&gt;tabPage7.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="&gt;&gt;playencodedPoz1.Name" xml:space="preserve">
-    <value>playencodedPoz1</value>
-  </data>
-  <data name="&gt;&gt;playencodedPoz1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;playencodedPoz1.Parent" xml:space="preserve">
-    <value>tabPage8</value>
-  </data>
-  <data name="&gt;&gt;playencodedPoz1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="renderTab.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
   <data name="splitContainer1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -4767,45 +4120,45 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>True</value>
   </data>
   <data name="splitContainer1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 45</value>
+    <value>11, 44</value>
   </data>
-  <data name="soundbitrateinfPoz1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="soundbitrateinf.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Right</value>
   </data>
-  <data name="soundbitrateinfPoz1.Enabled" type="System.Boolean, mscorlib">
+  <data name="soundbitrateinf.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="soundbitrateinfPoz1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="soundbitrateinf.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 26.25pt, style=Bold</value>
   </data>
-  <data name="soundbitrateinfPoz1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="soundbitrateinf.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="soundbitrateinfPoz1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>65, 232</value>
+  <data name="soundbitrateinf.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 194</value>
   </data>
-  <data name="soundbitrateinfPoz1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>421, 52</value>
+  <data name="soundbitrateinf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>511, 52</value>
   </data>
-  <data name="soundbitrateinfPoz1.TabIndex" type="System.Int32, mscorlib">
+  <data name="soundbitrateinf.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
   </data>
-  <data name="soundbitrateinfPoz1.Text" xml:space="preserve">
+  <data name="soundbitrateinf.Text" xml:space="preserve">
     <value>000kb/s (000KB)</value>
   </data>
-  <data name="soundbitrateinfPoz1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="soundbitrateinf.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="&gt;&gt;soundbitrateinfPoz1.Name" xml:space="preserve">
-    <value>soundbitrateinfPoz1</value>
+  <data name="&gt;&gt;soundbitrateinf.Name" xml:space="preserve">
+    <value>soundbitrateinf</value>
   </data>
-  <data name="&gt;&gt;soundbitrateinfPoz1.Type" xml:space="preserve">
+  <data name="&gt;&gt;soundbitrateinf.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;soundbitrateinfPoz1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;soundbitrateinf.Parent" xml:space="preserve">
     <value>splitContainer1.Panel1</value>
   </data>
-  <data name="&gt;&gt;soundbitrateinfPoz1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;soundbitrateinf.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="label3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
@@ -4818,10 +4171,10 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>62, 284</value>
+    <value>0, 246</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>424, 17</value>
+    <value>512, 17</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>43</value>
@@ -4866,10 +4219,10 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>NoControl</value>
   </data>
   <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 284</value>
+    <value>3, 246</value>
   </data>
   <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>412, 17</value>
+    <value>486, 17</value>
   </data>
   <data name="label16.TabIndex" type="System.Int32, mscorlib">
     <value>46</value>
@@ -4902,10 +4255,10 @@ Zaznacz jeżeli chcesz odtwarzać nagranie na 5 głośnikach (np.: kino domowe).
     <value>NoControl</value>
   </data>
   <data name="fserrorinf.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 301</value>
+    <value>3, 263</value>
   </data>
   <data name="fserrorinf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>412, 34</value>
+    <value>486, 34</value>
   </data>
   <data name="fserrorinf.TabIndex" type="System.Int32, mscorlib">
     <value>45</value>
@@ -4932,43 +4285,43 @@ Spróbuj zmienić ustawienia enkodera</value>
   <data name="&gt;&gt;fserrorinf.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="filesizekbPoz1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="filesizekb.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left</value>
   </data>
-  <data name="filesizekbPoz1.Enabled" type="System.Boolean, mscorlib">
+  <data name="filesizekb.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="filesizekbPoz1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="filesizekb.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 26.25pt, style=Bold</value>
   </data>
-  <data name="filesizekbPoz1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="filesizekb.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="filesizekbPoz1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 232</value>
+  <data name="filesizekb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 194</value>
   </data>
-  <data name="filesizekbPoz1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>412, 54</value>
+  <data name="filesizekb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>486, 54</value>
   </data>
-  <data name="filesizekbPoz1.TabIndex" type="System.Int32, mscorlib">
+  <data name="filesizekb.TabIndex" type="System.Int32, mscorlib">
     <value>47</value>
   </data>
-  <data name="filesizekbPoz1.Text" xml:space="preserve">
+  <data name="filesizekb.Text" xml:space="preserve">
     <value>Wczytywanie...</value>
   </data>
-  <data name="filesizekbPoz1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="filesizekb.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>TopCenter</value>
   </data>
-  <data name="&gt;&gt;filesizekbPoz1.Name" xml:space="preserve">
-    <value>filesizekbPoz1</value>
+  <data name="&gt;&gt;filesizekb.Name" xml:space="preserve">
+    <value>filesizekb</value>
   </data>
-  <data name="&gt;&gt;filesizekbPoz1.Type" xml:space="preserve">
+  <data name="&gt;&gt;filesizekb.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;filesizekbPoz1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;filesizekb.Parent" xml:space="preserve">
     <value>splitContainer1.Panel2</value>
   </data>
-  <data name="&gt;&gt;filesizekbPoz1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;filesizekb.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="&gt;&gt;splitContainer1.Panel2.Name" xml:space="preserve">
@@ -4984,10 +4337,10 @@ Spróbuj zmienić ustawienia enkodera</value>
     <value>1</value>
   </data>
   <data name="splitContainer1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>981, 551</value>
+    <value>1004, 474</value>
   </data>
   <data name="splitContainer1.SplitterDistance" type="System.Int32, mscorlib">
-    <value>565</value>
+    <value>511</value>
   </data>
   <data name="splitContainer1.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
@@ -5002,10 +4355,10 @@ Spróbuj zmienić ustawienia enkodera</value>
     <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;splitContainer1.Parent" xml:space="preserve">
-    <value>tabPage8</value>
+    <value>renderTab</value>
   </data>
   <data name="&gt;&gt;splitContainer1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="status.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -5020,7 +4373,7 @@ Spróbuj zmienić ustawienia enkodera</value>
     <value>NoControl</value>
   </data>
   <data name="status.Location" type="System.Drawing.Point, System.Drawing">
-    <value>97, 607</value>
+    <value>83, 521</value>
   </data>
   <data name="status.Size" type="System.Drawing.Size, System.Drawing">
     <value>577, 30</value>
@@ -5038,46 +4391,46 @@ Spróbuj zmienić ustawienia enkodera</value>
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;status.Parent" xml:space="preserve">
-    <value>tabPage8</value>
+    <value>renderTab</value>
   </data>
   <data name="&gt;&gt;status.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
-  <data name="procentstatusPoz1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="procentstatus.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
   </data>
-  <data name="procentstatusPoz1.AutoSize" type="System.Boolean, mscorlib">
+  <data name="procentstatus.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="procentstatusPoz1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="procentstatus.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 8.25pt</value>
   </data>
-  <data name="procentstatusPoz1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="procentstatus.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="procentstatusPoz1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>386, 638</value>
+  <data name="procentstatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>372, 552</value>
   </data>
-  <data name="procentstatusPoz1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="procentstatus.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 16</value>
   </data>
-  <data name="procentstatusPoz1.TabIndex" type="System.Int32, mscorlib">
+  <data name="procentstatus.TabIndex" type="System.Int32, mscorlib">
     <value>35</value>
   </data>
-  <data name="procentstatusPoz1.Text" xml:space="preserve">
+  <data name="procentstatus.Text" xml:space="preserve">
     <value>0%</value>
   </data>
-  <data name="&gt;&gt;procentstatusPoz1.Name" xml:space="preserve">
-    <value>procentstatusPoz1</value>
+  <data name="&gt;&gt;procentstatus.Name" xml:space="preserve">
+    <value>procentstatus</value>
   </data>
-  <data name="&gt;&gt;procentstatusPoz1.Type" xml:space="preserve">
+  <data name="&gt;&gt;procentstatus.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;procentstatusPoz1.Parent" xml:space="preserve">
-    <value>tabPage8</value>
+  <data name="&gt;&gt;procentstatus.Parent" xml:space="preserve">
+    <value>renderTab</value>
   </data>
-  <data name="&gt;&gt;procentstatusPoz1.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;procentstatus.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="killprocess.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
@@ -5092,7 +4445,7 @@ Spróbuj zmienić ustawienia enkodera</value>
     <value>NoControl</value>
   </data>
   <data name="killprocess.Location" type="System.Drawing.Point, System.Drawing">
-    <value>687, 644</value>
+    <value>894, 554</value>
   </data>
   <data name="killprocess.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 32</value>
@@ -5113,70 +4466,70 @@ Spróbuj zmienić ustawienia enkodera</value>
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;killprocess.Parent" xml:space="preserve">
-    <value>tabPage8</value>
+    <value>renderTab</value>
   </data>
   <data name="&gt;&gt;killprocess.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
-  <data name="KolejkaPoz1Text.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="Kolejka.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <data name="KolejkaPoz1Text.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="Kolejka.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 15.75pt, style=Bold</value>
   </data>
-  <data name="KolejkaPoz1Text.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="Kolejka.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="KolejkaPoz1Text.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="Kolejka.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 11</value>
   </data>
-  <data name="KolejkaPoz1Text.Size" type="System.Drawing.Size, System.Drawing">
-    <value>984, 25</value>
+  <data name="Kolejka.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1007, 30</value>
   </data>
-  <data name="KolejkaPoz1Text.TabIndex" type="System.Int32, mscorlib">
+  <data name="Kolejka.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="KolejkaPoz1Text.Text" xml:space="preserve">
-    <value>Ścieżka nagrania - Długość nagrania</value>
+  <data name="Kolejka.Text" xml:space="preserve">
+    <value>Tu pojawią się informacje podczas enkodowania nagrania</value>
   </data>
-  <data name="&gt;&gt;KolejkaPoz1Text.Name" xml:space="preserve">
-    <value>KolejkaPoz1Text</value>
+  <data name="&gt;&gt;Kolejka.Name" xml:space="preserve">
+    <value>Kolejka</value>
   </data>
-  <data name="&gt;&gt;KolejkaPoz1Text.Type" xml:space="preserve">
+  <data name="&gt;&gt;Kolejka.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;KolejkaPoz1Text.Parent" xml:space="preserve">
-    <value>tabPage8</value>
+  <data name="&gt;&gt;Kolejka.Parent" xml:space="preserve">
+    <value>renderTab</value>
   </data>
-  <data name="&gt;&gt;KolejkaPoz1Text.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="&gt;&gt;Kolejka.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="encprogressbarPoz1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="encprogressbar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
   </data>
-  <data name="encprogressbarPoz1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="encprogressbar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="encprogressbarPoz1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>102, 640</value>
+  <data name="encprogressbar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 554</value>
   </data>
-  <data name="encprogressbarPoz1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="encprogressbar.Size" type="System.Drawing.Size, System.Drawing">
     <value>278, 12</value>
   </data>
-  <data name="encprogressbarPoz1.TabIndex" type="System.Int32, mscorlib">
+  <data name="encprogressbar.TabIndex" type="System.Int32, mscorlib">
     <value>34</value>
   </data>
-  <data name="&gt;&gt;encprogressbarPoz1.Name" xml:space="preserve">
-    <value>encprogressbarPoz1</value>
+  <data name="&gt;&gt;encprogressbar.Name" xml:space="preserve">
+    <value>encprogressbar</value>
   </data>
-  <data name="&gt;&gt;encprogressbarPoz1.Type" xml:space="preserve">
+  <data name="&gt;&gt;encprogressbar.Type" xml:space="preserve">
     <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;encprogressbarPoz1.Parent" xml:space="preserve">
-    <value>tabPage8</value>
+  <data name="&gt;&gt;encprogressbar.Parent" xml:space="preserve">
+    <value>renderTab</value>
   </data>
-  <data name="&gt;&gt;encprogressbarPoz1.ZOrder" xml:space="preserve">
-    <value>6</value>
+  <data name="&gt;&gt;encprogressbar.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="progresscircle.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left</value>
@@ -5188,10 +4541,13 @@ Spróbuj zmienić ustawienia enkodera</value>
     <value>NoControl</value>
   </data>
   <data name="progresscircle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>21, 603</value>
+    <value>38, 525</value>
   </data>
   <data name="progresscircle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 60</value>
+    <value>44, 41</value>
+  </data>
+  <data name="progresscircle.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
   <data name="progresscircle.TabIndex" type="System.Int32, mscorlib">
     <value>36</value>
@@ -5203,10 +4559,106 @@ Spróbuj zmienić ustawienia enkodera</value>
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;progresscircle.Parent" xml:space="preserve">
-    <value>tabPage8</value>
+    <value>renderTab</value>
   </data>
   <data name="&gt;&gt;progresscircle.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="playencoded.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="playencoded.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="playencoded.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 9.75pt</value>
+  </data>
+  <data name="playencoded.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="playencoded.Location" type="System.Drawing.Point, System.Drawing">
+    <value>837, 554</value>
+  </data>
+  <data name="playencoded.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 32</value>
+  </data>
+  <data name="playencoded.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="playencoded.Text" xml:space="preserve">
+    <value>▶ Otwórz nagranie</value>
+  </data>
+  <data name="playencoded.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;playencoded.Name" xml:space="preserve">
+    <value>playencoded</value>
+  </data>
+  <data name="&gt;&gt;playencoded.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;playencoded.Parent" xml:space="preserve">
+    <value>renderTab</value>
+  </data>
+  <data name="&gt;&gt;playencoded.ZOrder" xml:space="preserve">
     <value>7</value>
+  </data>
+  <data name="renderTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="renderTab.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="renderTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1023, 594</value>
+  </data>
+  <data name="renderTab.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="renderTab.Text" xml:space="preserve">
+    <value>🔄 Renderowanie</value>
+  </data>
+  <data name="&gt;&gt;renderTab.Name" xml:space="preserve">
+    <value>renderTab</value>
+  </data>
+  <data name="&gt;&gt;renderTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;renderTab.Parent" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;renderTab.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="tabControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tabControl1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Century Gothic, 8.25pt</value>
+  </data>
+  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tabControl1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1031, 623</value>
+  </data>
+  <data name="tabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
+    <value>tabControl1</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <metadata name="oczekiwanienadanewielkoscMB.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>693, -1</value>
@@ -5230,7 +4682,7 @@ Spróbuj zmienić ustawienia enkodera</value>
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1008, 711</value>
+    <value>1031, 623</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -5449,14 +4901,11 @@ Spróbuj zmienić ustawienia enkodera</value>
         YII=
 </value>
   </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>890, 620</value>
+    <value>1047, 620</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Clenc by Sho [v1.2]</value>
+    <value>Clenc by Sho [v1.6]</value>
   </data>
   <data name="&gt;&gt;openFileDialog1.Name" xml:space="preserve">
     <value>openFileDialog1</value>
@@ -5512,6 +4961,12 @@ Spróbuj zmienić ustawienia enkodera</value>
   <data name="&gt;&gt;niePokazujOknaWierszaPoleceńToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;zdalnyRenderToolStripMenuItem.Name" xml:space="preserve">
+    <value>zdalnyRenderToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;zdalnyRenderToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;nieOtwarzajNagraniaWAplikacjiToolStripMenuItem.Name" xml:space="preserve">
     <value>nieOtwarzajNagraniaWAplikacjiToolStripMenuItem</value>
   </data>
@@ -5528,12 +4983,6 @@ Spróbuj zmienić ustawienia enkodera</value>
     <value>autopreviewrendering</value>
   </data>
   <data name="&gt;&gt;autopreviewrendering.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;hdrendercheck.Name" xml:space="preserve">
-    <value>hdrendercheck</value>
-  </data>
-  <data name="&gt;&gt;hdrendercheck.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;oczekiwanienadanewielkoscMB.Name" xml:space="preserve">
