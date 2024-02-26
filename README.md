@@ -14,7 +14,6 @@ Zalecane dodatki:
 
 Sprzęt:
 - Nowoczesny procesor (znacznie przyspiesza konwersję)
-- Conajmniej 512MB wolnej pamięci RAM
 - 80MB wolnego miejsca na dysku
 - System operacyjny Windows Vista lub nowszy (64-bit)
 
